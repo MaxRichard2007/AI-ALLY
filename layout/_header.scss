@@ -1,0 +1,44 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+
+  .left-header-section {
+    display: flex;
+
+    .logo {
+      width: 3rem;
+    }
+
+    p {
+      padding-left: 1rem;
+      color: black;
+    }
+  }
+
+  .center-header-section {
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+
+      li {
+        cursor: pointer;
+
+        a {
+          text-decoration: none;
+          color: rgb(19, 19, 19);
+        }
+
+        a:hover {
+          color: #6e6e6e;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}
