@@ -4,6 +4,73 @@ body {
   font-weight: 400;
   font-style: normal; }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #111;
+  border-radius: 20px;
+  max-width: 69rem;
+  margin: 50px auto;
+  color: white;
+  top: -2rem;
+  position: relative; }
+
+.text {
+  max-width: 50%; }
+
+.text h1 {
+  font-size: 48px;
+  margin-bottom: 20px; }
+
+.text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px; }
+
+.buttons {
+  margin-bottom: 30px; }
+
+.btn {
+  text-decoration: none;
+  padding: 15px 25px;
+  margin-right: 10px;
+  border-radius: 50px;
+  font-size: 16px;
+  color: white;
+  background-color: #444;
+  transition: background-color 0.3s ease; }
+
+.btn.green {
+  background-color: #32cd32; }
+
+.btn:hover {
+  background-color: #555; }
+
+.stats {
+  display: flex;
+  gap: 30px;
+  font-size: 20px; }
+
+.stats div span {
+  display: block;
+  font-size: 14px;
+  color: #ccc; }
+
+.image-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center; }
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  background: #524747;
+  border-radius: 30px;
+  box-shadow: 0rem 0rem 24rem #ffd5d5; }
+
 button {
   width: 7rem;
   height: 2rem;
