@@ -11,13 +11,15 @@
 // components
 @import "components/buttons";
 @import "components/cards";
-@import "components/forms";
+@import "components/stats.scss";
+@import "image-container";
 
 // layout
 @import "layout/header";
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/sidebar";
+@import "container";
 
 // pages
 @import "pages/home";

@@ -15,3 +15,26 @@ button {
     transform: translateY(0);
   }
 }
+
+.buttons {
+  margin-bottom: 30px;
+
+  .btn {
+    text-decoration: none;
+    padding: 15px 25px;
+    margin-right: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+
+    &.green {
+      background-color: #32cd32;
+    }
+
+    &:hover {
+      background-color: #555;
+    }
+  }
+}
