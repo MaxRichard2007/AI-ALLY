@@ -1,11 +1,12 @@
 .stats {
-    display: flex;
-    gap: 30px;
-    font-size: 20px;
-    & div span {
-        display: block;
-        font-size: 14px;
-        color: #ccc;
-    }
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+  top: 2rem;
+  position: relative;
+  & div span {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+  }
 }
-

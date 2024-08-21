@@ -53,7 +53,9 @@ button {
 .stats {
   display: flex;
   gap: 30px;
-  font-size: 20px; }
+  font-size: 20px;
+  top: 2rem;
+  position: relative; }
   .stats div span {
     display: block;
     font-size: 14px;
