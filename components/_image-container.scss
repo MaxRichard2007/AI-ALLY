@@ -1,0 +1,15 @@
+.image-container {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  
+    & img {
+      max-width: 100%;
+      height: auto;
+      background: #524747;
+      border-radius: 30px;
+      box-shadow: 0rem 0rem 24rem rgba(255, 213, 213, 5.7);
+    }
+  }
+  

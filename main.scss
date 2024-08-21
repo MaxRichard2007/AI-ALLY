@@ -12,14 +12,14 @@
 @import "components/buttons";
 @import "components/cards";
 @import "components/stats.scss";
-@import "image-container";
+@import "components/image-container";
 
 // layout
 @import "layout/header";
 @import "layout/footer";
 @import "layout/grid";
 @import "layout/sidebar";
-@import "container";
+@import "layout/container";
 
 // pages
 @import "pages/home";
