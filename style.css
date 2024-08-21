@@ -4,7 +4,7 @@ body {
   padding: 0;
   background-color: white;
   color: black;
-  font-family: "Lora", serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal; }
 
@@ -99,7 +99,7 @@ button {
         color: #6e6e6e;
         transition: 0.2s; }
 
-.container {
+.heroSection {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -108,6 +108,8 @@ button {
   border-radius: 20px;
   max-width: 69rem;
   margin: 50px auto;
-  color: white; }
+  color: white;
+  top: -2rem;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

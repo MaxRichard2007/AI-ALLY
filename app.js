@@ -71,3 +71,83 @@ const headerSection = () => {
 };
 
 headerSection();
+
+const heroSection = () => {
+  const heroSection = document.createElement("div");
+  heroSection.classList.add("heroSection");
+
+  const text = document.createElement("div");
+  text.classList.add("text");
+
+  const h1 = document.createElement("h1");
+  h1.innerHTML = "Unleash the full potential of AI";
+
+  const p = document.createElement("p");
+  p.innerHTML =
+    "AI Ally is a versatile assistant that utilizes state-of-the-art natural language processing to provide real-time support and assistance across various domains.";
+
+  const buttonsContainer = document.createElement("div");
+  buttonsContainer.classList.add("buttons");
+
+  const menuItems = [
+    { text: "Get the App", href: "#", class: "btn green" },
+    { text: "More", href: "#", class: "btn" },
+  ];
+
+  menuItems.forEach((item) => {
+    const a = document.createElement("a");
+    a.textContent = item.text;
+    a.href = item.href;
+    a.className = item.class;
+
+    // اگر کلاس "btn green" باشد، آیکون فلش اضافه کنید
+    if (item.class.includes("green")) {
+      const icon = document.createElement("i");
+      icon.classList.add("fa-solid", "fa-arrow-right");
+      a.appendChild(icon);
+    }
+
+    buttonsContainer.appendChild(a);
+  });
+
+  const stats = document.createElement("div");
+  stats.classList.add("stats");
+
+  const statItems = [
+    { value: "4.8", description: "Rating on AppStore" },
+    { value: "700k+", description: "Active users" },
+  ];
+
+  statItems.forEach((item) => {
+    const div = document.createElement("div");
+    div.innerHTML = item.value;
+
+    const span = document.createElement("span");
+    span.innerHTML = item.description;
+
+    div.appendChild(document.createElement("br"));
+    div.appendChild(span);
+
+    stats.appendChild(div);
+  });
+
+  const imgContainer = document.createElement("div");
+  imgContainer.classList.add("image-container");
+
+  const img = document.createElement("img");
+  img.src = "img/Ai-Ally-phone.png";
+
+  // Append elements in the correct order
+  heroSection.appendChild(text);
+  text.appendChild(h1);
+  text.appendChild(p);
+  text.appendChild(buttonsContainer);
+  text.appendChild(stats);
+
+  heroSection.appendChild(imgContainer);
+  imgContainer.appendChild(img);
+
+  document.body.appendChild(heroSection);
+};
+
+heroSection();
