@@ -1,66 +1,113 @@
-/*
-Error: File to import not found or unreadable: image-container.
-        on line 15 of main.scss
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal; }
 
-10: 
-11: // components
-12: @import "components/buttons";
-13: @import "components/cards";
-14: @import "components/stats.scss";
-15: @import "image-container";
-16: 
-17: // layout
-18: @import "layout/header";
-19: @import "layout/footer";
-20: @import "layout/grid";
+.text {
+  max-width: 50%; }
 
-Backtrace:
-main.scss:15
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:468:in `update_stylesheet'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:449:in `on_file_changed'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/event/config.rb:28:in `call'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/event/processor.rb:117:in `block in _process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/thread.rb:26:in `rescue_and_log'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/event/processor.rb:116:in `_process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/event/processor.rb:25:in `block in loop_for'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/event/processor.rb:20:in `loop'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/event/processor.rb:20:in `loop_for'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/event/loop.rb:85:in `_process_changes'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/event/loop.rb:51:in `block in start'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/thread.rb:26:in `rescue_and_log'
-/usr/share/rubygems-integration/all/gems/listen-3.9.0/lib/listen/thread.rb:18:in `block in new'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: image-container.\A         on line 15 of main.scss\A \A 10: \A 11: // components\A 12: @import \"components/buttons\";\A 13: @import \"components/cards\";\A 14: @import \"components/stats.scss\";\A 15: @import \"image-container\";\A 16: \A 17: // layout\A 18: @import \"layout/header\";\A 19: @import \"layout/footer\";\A 20: @import \"layout/grid\";"; }
+.text h1 {
+  font-size: 48px;
+  margin-bottom: 20px; }
+
+.text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px; }
+
+button {
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background: #a5d6a7;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out; }
+  button:hover {
+    background-color: #74b977;
+    transform: translateY(-2px); }
+  button:active {
+    transform: translateY(0); }
+
+.buttons {
+  margin-bottom: 30px; }
+  .buttons .btn {
+    text-decoration: none;
+    padding: 15px 25px;
+    margin-right: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: #444;
+    transition: background-color 0.3s ease; }
+    .buttons .btn.green {
+      background-color: #32cd32; }
+    .buttons .btn:hover {
+      background-color: #555; }
+
+.stats {
+  display: flex;
+  gap: 30px;
+  font-size: 20px; }
+  .stats div span {
+    display: block;
+    font-size: 14px;
+    color: #ccc; }
+
+.image-container {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center; }
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    background: #524747;
+    border-radius: 30px;
+    box-shadow: 0rem 0rem 24rem #ffd5d5; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white; }
+  .header .left-header-section {
+    display: flex; }
+    .header .left-header-section .logo {
+      width: 3rem; }
+    .header .left-header-section p {
+      padding-left: 1rem;
+      color: black; }
+  .header .center-header-section ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0; }
+    .header .center-header-section ul li {
+      cursor: pointer; }
+      .header .center-header-section ul li a {
+        text-decoration: none;
+        color: #131313; }
+      .header .center-header-section ul li a:hover {
+        color: #6e6e6e;
+        transition: 0.2s; }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #111;
+  border-radius: 20px;
+  max-width: 69rem;
+  margin: 50px auto;
+  color: white; }
+
+/*# sourceMappingURL=style.css.map */
