@@ -1,0 +1,27 @@
+.differentDestinations {
+  width: 75rem;
+  height: auto;
+  left: 1rem;
+  position: relative;
+
+  .paragraph {
+    display: flex;
+
+    p {
+      max-width: 50%;
+    }
+  }
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  .img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 20rem;
+  }
+}

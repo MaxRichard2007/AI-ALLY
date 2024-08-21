@@ -101,6 +101,26 @@ button {
         color: #6e6e6e;
         transition: 0.2s; }
 
+.differentDestinations {
+  width: 75rem;
+  height: auto;
+  left: 1rem;
+  position: relative; }
+  .differentDestinations .paragraph {
+    display: flex; }
+    .differentDestinations .paragraph p {
+      max-width: 50%; }
+
+.imageContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; }
+  .imageContainer .img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 8px;
+    height: 20rem; }
+
 .heroSection {
   display: flex;
   justify-content: space-between;

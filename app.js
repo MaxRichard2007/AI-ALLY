@@ -100,7 +100,6 @@ const heroSection = () => {
     a.href = item.href;
     a.className = item.class;
 
-    // اگر کلاس "btn green" باشد، آیکون فلش اضافه کنید
     if (item.class.includes("green")) {
       const icon = document.createElement("i");
       icon.classList.add("fa-solid", "fa-arrow-right");
@@ -151,3 +150,58 @@ const heroSection = () => {
 };
 
 heroSection();
+
+const differentDestinations = () => {
+  const differentDestinationsSection = document.createElement("div");
+  differentDestinationsSection.classList.add("differentDestinations");
+
+  const h1 = document.createElement("h1");
+  h1.innerHTML = "Different destinations";
+
+  const createTextSection = () => {
+    const text = document.createElement("div");
+    text.classList.add("paragraph");
+
+    const p = document.createElement("p");
+    p.innerHTML =
+      "We explore the diverse ways in which this technology can revolutionize work across various industries and fields.";
+
+    const p1 = document.createElement("p");
+    p1.innerHTML =
+      "Discover how AI can streamline processes and elevate your work to new heights.";
+
+    const p2 = document.createElement("p");
+    p2.innerHTML = "Discover all applications";
+
+    const i = document.createElement("i");
+    i.classList.add("fa-solid", "fa-arrow-up-right-from-square");
+
+    p2.appendChild(i);
+    text.appendChild(p);
+    text.appendChild(p1);
+    text.appendChild(p2);
+
+    return text;
+  };
+
+  const textSection = createTextSection();
+
+  const theBoxes = () => {
+    const theBoxes = document.createElement("div");
+    theBoxes.classList.add(theBoxes);
+
+    const box = () => {
+      const p = document.createElement("p");
+      const i = document.createElement("div");
+    };
+    const box2 = () => {};
+    const box3 = () => {};
+  };
+
+  document.body.appendChild(differentDestinationsSection);
+  differentDestinationsSection.appendChild(h1);
+  differentDestinationsSection.appendChild(textSection);
+  differentDestinationsSection.appendChild(imagesBoxSection);
+};
+
+differentDestinations();
