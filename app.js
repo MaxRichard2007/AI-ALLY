@@ -158,32 +158,6 @@ const differentDestinations = () => {
   const h1 = document.createElement("h1");
   h1.innerHTML = "Different destinations";
 
-  const createTextSection = () => {
-    const text = document.createElement("div");
-    text.classList.add("paragraph");
-
-    const p = document.createElement("p");
-    p.innerHTML =
-      "We explore the diverse ways in which this technology can revolutionize work across various industries and fields.";
-
-    const p1 = document.createElement("p");
-    p1.innerHTML =
-      "Discover how AI can streamline processes and elevate your work to new heights.";
-
-    const p2 = document.createElement("p");
-    p2.innerHTML = "Discover all applications";
-
-    const i = document.createElement("i");
-    i.classList.add("fa-solid", "fa-arrow-up-right-from-square");
-
-    p2.appendChild(i);
-    text.appendChild(p);
-    text.appendChild(p1);
-    text.appendChild(p2);
-
-    return text;
-  };
-
   const textSection = createTextSection();
 
   const theBoxes = () => {
@@ -192,11 +166,40 @@ const differentDestinations = () => {
 
     const box = () => {
       const p = document.createElement("p");
-      const i = document.createElement("div");
+      p.classList.add("theTopText");
+      p.innerHTML =
+        "We explore the diverse ways in which this technology can revolutionize work across various industries and fields.";
+
+      const img = document.createElement("img");
+      img.classList.add("img");
+      img.src = "img/girl-studying";
     };
-    const box2 = () => {};
-    const box3 = () => {};
+    const box2 = () => {
+      const p = document.createElement("p");
+      p.classList.add("theTopText");
+      p.innerHTML =
+        "Discover how AI can streamline processes and elevate your work to new heights.";
+
+      const img = document.createElement("img");
+      img.classList.add("img");
+      img.src = "img/boys-studying";
+    };
+    const box3 = () => {
+      const p = document.createElement("p");
+      p.classList.add("theTopText");
+      p.innerHTML = "Discover all applications";
+
+      const i = document.createElement("i");
+      i.classList.add("fa-solid", "fa-arrow-up-right-from-square");
+
+      const img = document.createElement("img");
+      img.classList.add("img");
+      img.src = "img/girl-studying-2";
+    };
   };
+  theBoxes();
+
+  const Boxes = theBoxes()
 
   document.body.appendChild(differentDestinationsSection);
   differentDestinationsSection.appendChild(h1);
@@ -204,4 +207,4 @@ const differentDestinations = () => {
   differentDestinationsSection.appendChild(imagesBoxSection);
 };
 
-differentDestinations();
+// differentDestinations();

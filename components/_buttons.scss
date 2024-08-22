@@ -3,14 +3,10 @@ button {
   height: 2rem;
   border: none;
   border-radius: 1rem;
-  background: #a5d6a7;
+  background: #32cd32;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
 
-  &:hover {
-    background-color: #74b977;
-    transform: translateY(-2px);
-  }
   &:active {
     transform: translateY(0);
   }
@@ -36,5 +32,28 @@ button {
     &:hover {
       background-color: #555;
     }
+  }
+}
+
+.button-box button {
+  width: 17rem;
+  height: 3rem;
+}
+
+.buttonInImage {
+  position: absolute;
+  top: 11%;
+  left: 18%;
+  width: $button-width;
+  height: $button-height;
+  background: $primary-color;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+
+  &:hover {
+    transition: 0.5s;
+    background: $hover-color;
   }
 }

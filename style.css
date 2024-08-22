@@ -25,12 +25,9 @@ button {
   height: 2rem;
   border: none;
   border-radius: 1rem;
-  background: #a5d6a7;
+  background: #32cd32;
   cursor: pointer;
   transition: transform 0.1s ease-in-out; }
-  button:hover {
-    background-color: #74b977;
-    transform: translateY(-2px); }
   button:active {
     transform: translateY(0); }
 
@@ -49,6 +46,25 @@ button {
       background-color: #32cd32; }
     .buttons .btn:hover {
       background-color: #555; }
+
+.button-box button {
+  width: 17rem;
+  height: 3rem; }
+
+.buttonInImage {
+  position: absolute;
+  top: 11%;
+  left: 18%;
+  width: 106px;
+  height: 43px;
+  background: #f1f1f1;
+  border: none;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  transform: translate(-50%, -50%); }
+  .buttonInImage:hover {
+    transition: 0.5s;
+    background: #d9d9d9; }
 
 .stats {
   display: flex;
@@ -72,6 +88,23 @@ button {
     background: #524747;
     border-radius: 30px;
     box-shadow: 0rem 0rem 24rem #ffd5d5; }
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  top: 2rem; }
+  .imageContainer .image {
+    position: relative;
+    width: 100%; }
+    .imageContainer .image img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1.8rem;
+      height: 20rem; }
 
 .header {
   display: flex;
@@ -101,25 +134,69 @@ button {
         color: #6e6e6e;
         transition: 0.2s; }
 
-.differentDestinations {
+.differentDes {
   width: 75rem;
-  height: auto;
-  left: 1rem;
-  position: relative; }
-  .differentDestinations .paragraph {
+  position: relative;
+  left: 1rem; }
+  .differentDes .paragraph {
+    display: flex;
+    gap: 20px; }
+    .differentDes .paragraph .text {
+      max-width: 28%; }
+    .differentDes .paragraph .text2 {
+      max-width: 27%;
+      left: 3rem;
+      position: relative; }
+    .differentDes .paragraph .text3 {
+      left: 18rem;
+      position: relative; }
+      .differentDes .paragraph .text3 img {
+        width: 1rem;
+        top: 4px;
+        position: relative;
+        cursor: pointer; }
+  .differentDes .imageContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    top: 2rem; }
+    .differentDes .imageContainer .image {
+      position: relative;
+      width: 100%; }
+      .differentDes .imageContainer .image img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 1.8rem;
+        height: 20rem; }
+      .differentDes .imageContainer .image .buttonInImage {
+        position: absolute;
+        top: 11%;
+        left: 18%;
+        width: 106px;
+        height: 43px;
+        background: #f1f1f1;
+        border: none;
+        border-radius: 1.5rem;
+        cursor: pointer;
+        transform: translate(-50%, -50%); }
+        .differentDes .imageContainer .image .buttonInImage:hover {
+          transition: 0.5s;
+          background: #d9d9d9; }
+  .differentDes .secondParagraph {
+    top: 2rem;
+    position: relative;
     display: flex; }
-    .differentDestinations .paragraph p {
-      max-width: 50%; }
-
-.imageContainer {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px; }
-  .imageContainer .img {
-    width: 30%;
-    object-fit: cover;
-    border-radius: 8px;
-    height: 20rem; }
+    .differentDes .secondParagraph p {
+      max-width: 80%; }
+  .differentDes .button-box {
+    top: 3rem;
+    position: relative;
+    text-align: center; }
+    .differentDes .button-box button {
+      width: 17rem;
+      background-color: #32cd32;
+      height: 3rem; }
 
 .heroSection {
   display: flex;
@@ -133,5 +210,37 @@ button {
   color: white;
   top: -2rem;
   position: relative; }
+
+.differentDes {
+  width: 75rem;
+  position: relative;
+  left: 1rem; }
+  .differentDes .paragraph {
+    display: flex;
+    gap: 20px; }
+    .differentDes .paragraph .text {
+      max-width: 28%; }
+    .differentDes .paragraph .text2 {
+      max-width: 27%;
+      left: 3rem;
+      position: relative; }
+    .differentDes .paragraph .text3 {
+      left: 18rem;
+      position: relative; }
+      .differentDes .paragraph .text3 img {
+        width: 1rem;
+        top: 4px;
+        position: relative;
+        cursor: pointer; }
+  .differentDes .secondParagraph {
+    top: 2rem;
+    position: relative;
+    display: flex; }
+    .differentDes .secondParagraph p {
+      max-width: 80%; }
+  .differentDes .button-box {
+    top: 3rem;
+    position: relative;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
