@@ -151,60 +151,187 @@ const heroSection = () => {
 
 heroSection();
 
-const differentDestinations = () => {
-  const differentDestinationsSection = document.createElement("div");
-  differentDestinationsSection.classList.add("differentDestinations");
+const destinationSection = () => {
+  const destinationSection = document.createElement("div");
+  destinationSection.classList.add("differentDes");
 
   const h1 = document.createElement("h1");
   h1.innerHTML = "Different destinations";
 
-  const textSection = createTextSection();
+  const paragraph = () => {
+    const paragraph = document.createElement("div");
+    paragraph.classList.add("paragraph");
 
-  const theBoxes = () => {
-    const theBoxes = document.createElement("div");
-    theBoxes.classList.add(theBoxes);
+    const text = document.createElement("div");
+    text.classList.add("text");
+    text.innerHTML =
+      "We explore the diverse ways in which this technology can revolutionize work across various industries and fields.";
 
-    const box = () => {
-      const p = document.createElement("p");
-      p.classList.add("theTopText");
-      p.innerHTML =
-        "We explore the diverse ways in which this technology can revolutionize work across various industries and fields.";
+    const text2 = document.createElement("div");
+    text2.classList.add("text2");
+    text2.innerHTML =
+      "Discover how AI can streamline processes and elevate your work to new heights.";
 
-      const img = document.createElement("img");
-      img.classList.add("img");
-      img.src = "img/girl-studying";
-    };
-    const box2 = () => {
-      const p = document.createElement("p");
-      p.classList.add("theTopText");
-      p.innerHTML =
-        "Discover how AI can streamline processes and elevate your work to new heights.";
+    const text3 = document.createElement("div");
+    text3.classList.add("text3");
+    text3.innerHTML = "Discover all applications";
 
-      const img = document.createElement("img");
-      img.classList.add("img");
-      img.src = "img/boys-studying";
-    };
-    const box3 = () => {
-      const p = document.createElement("p");
-      p.classList.add("theTopText");
-      p.innerHTML = "Discover all applications";
+    const img = document.createElement("img");
+    img.src = "./img/up-right-arrow.png";
 
-      const i = document.createElement("i");
-      i.classList.add("fa-solid", "fa-arrow-up-right-from-square");
+    paragraph.appendChild(text);
+    paragraph.appendChild(text2);
+    paragraph.appendChild(text3);
+    text3.appendChild(img);
 
-      const img = document.createElement("img");
-      img.classList.add("img");
-      img.src = "img/girl-studying-2";
-    };
+    return paragraph;
   };
-  theBoxes();
 
-  const Boxes = theBoxes()
+  const paragraphFun = paragraph();
 
-  document.body.appendChild(differentDestinationsSection);
-  differentDestinationsSection.appendChild(h1);
-  differentDestinationsSection.appendChild(textSection);
-  differentDestinationsSection.appendChild(imagesBoxSection);
+  const imageContainer = () => {
+    const imageContainer = document.createElement("div");
+    imageContainer.classList.add("imageContainer");
+
+    const image = () => {
+      const image = document.createElement("div");
+      image.classList.add("image");
+
+      const img = document.createElement("img");
+      img.src = "./img/girl-studying.jpg";
+
+      const button = document.createElement("button");
+      button.classList.add("buttonInImage");
+      button.innerHTML = "Try it now";
+
+      image.appendChild(img);
+      image.appendChild(button);
+      return image;
+    };
+    const imageFun = image();
+
+    const image2 = () => {
+      const image = document.createElement("div");
+      image.classList.add("image");
+
+      const img = document.createElement("img");
+      img.src = "./img/boys-studying.jpg";
+
+      const button = document.createElement("button");
+      button.classList.add("buttonInImage");
+      button.innerHTML = "Try it now";
+
+      image.appendChild(img);
+      image.appendChild(button);
+      return image;
+    };
+    const image2Fun = image2();
+
+    const image3 = () => {
+      const image = document.createElement("div");
+      image.classList.add("image");
+
+      const img = document.createElement("img");
+      img.src = "./img/girl-studying-2.jpg";
+
+      const button = document.createElement("button");
+      button.classList.add("buttonInImage");
+      button.innerHTML = "Try it now";
+
+      image.appendChild(img);
+      image.appendChild(button);
+      return image;
+    };
+    const image3Fun = image3();
+
+    imageContainer.appendChild(imageFun);
+    imageContainer.appendChild(image2Fun);
+    imageContainer.appendChild(image3Fun);
+    return imageContainer;
+  };
+
+  const imageContainerFun = imageContainer();
+
+  const secondParagraph = () => {
+    const secondParagraph = document.createElement("div");
+    secondParagraph.classList.add("secondParagraph");
+
+    const text = () => {
+      const text = document.createElement("div");
+      text.classList.add("text");
+
+      const h2 = document.createElement("h2");
+      h2.innerHTML = "Students";
+
+      const p = document.createElement("p");
+      p.innerHTML =
+        "AI Ally can assist in research, provide learning materials, and aswer questions";
+
+      text.appendChild(h2);
+      text.appendChild(p);
+      return text;
+    };
+    const textFun = text();
+
+    const text2 = () => {
+      const text = document.createElement("div");
+      text.classList.add("text2");
+
+      const h2 = document.createElement("h2");
+      h2.innerHTML = "Professionals";
+
+      const p = document.createElement("p");
+      p.innerHTML =
+        "AL Ally can provide quick access to relevant information and offer data analysis insights";
+
+      text.appendChild(h2);
+      text.appendChild(p);
+      return text;
+    };
+    const text2Fun = text2();
+
+    const text3 = () => {
+      const text = document.createElement("div");
+      text.classList.add("text3");
+
+      const h2 = document.createElement("h2");
+      h2.innerHTML = "Writes";
+
+      const p = document.createElement("p");
+      p.innerHTML =
+        "AI Ally can help writes by generating ideas, suggesting imporvements in writing style";
+
+      text.appendChild(h2);
+      text.appendChild(p);
+      return text;
+    };
+    const text3Fun = text3();
+
+    secondParagraph.appendChild(textFun);
+    secondParagraph.appendChild(text2Fun);
+    secondParagraph.appendChild(text3Fun);
+    return secondParagraph;
+  };
+  const secondParagraphFun = secondParagraph();
+
+  const buttonBoxes = () => {
+    const buttonBox = document.createElement("div");
+    buttonBox.classList.add("button-box");
+
+    const button = document.createElement("button");
+    button.innerHTML = "And more than 50 other destinations";
+
+    buttonBox.appendChild(button);
+    return buttonBox;
+  };
+  const buttonBoxesFun = buttonBoxes();
+
+  document.body.appendChild(destinationSection);
+  destinationSection.appendChild(h1);
+  destinationSection.appendChild(paragraphFun);
+  destinationSection.appendChild(imageContainerFun);
+  destinationSection.appendChild(secondParagraphFun);
+  destinationSection.appendChild(buttonBoxesFun);
 };
 
-// differentDestinations();
+destinationSection();
