@@ -1,0 +1,37 @@
+.chatContainer {
+  top: 0.4rem;
+  position: relative;
+
+  .menuItem {
+    width: 20rem;
+    border-radius: 1rem;
+    background: white;
+    height: 4rem;
+    padding: 10px;
+    margin-bottom: 1rem;
+
+    &.selected {
+      background-color: #202223;
+      color: white;
+      height: 7rem;
+
+      p {
+        position: relative;
+        left: 1.5rem;
+        max-width: 81%;
+      }
+
+      span {
+        top: 0.5rem;
+        left: 1.5rem;
+        position: relative;
+      }
+    }
+
+    span {
+      top: 1.5rem;
+      left: 1.5rem;
+      position: relative;
+    }
+  }
+}

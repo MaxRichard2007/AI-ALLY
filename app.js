@@ -198,7 +198,7 @@ const destinationSection = () => {
       image.classList.add("image");
 
       const img = document.createElement("img");
-      img.src = "./img/girl-studying.jpg";
+      img.src = "./img/girl-studying.jpeg";
 
       const button = document.createElement("button");
       button.classList.add("buttonInImage");
