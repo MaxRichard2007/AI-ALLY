@@ -335,3 +335,145 @@ const destinationSection = () => {
 };
 
 destinationSection();
+
+const appContainer = () => {
+  const appContainer = document.createElement("div");
+  appContainer.classList.add("appContainer");
+
+  const row = document.createElement("div");
+  row.classList.add("row");
+
+  const profileImgFun = () => {
+    const profileImgFun = document.createElement("div");
+    profileImgFun.classList.add("profileImg");
+
+    const img = document.createElement("img");
+    img.src = "img/ChatWithBakerySupport.jpg";
+
+    profileImgFun.appendChild(img);
+    return profileImgFun;
+  };
+  const profileImg = profileImgFun();
+
+  const chatContainerFun = () => {
+    const chatContainer = document.createElement("div");
+    chatContainer.classList.add("chatContainer");
+
+    const menuItems = () => {
+      const menuItem = document.createElement("div");
+      menuItem.classList.add("menuItem");
+
+      const span = document.createElement("span");
+
+      const i = document.createElement("i");
+      i.classList.add("fa-solid", "fa-magnifying-glass");
+
+      span.appendChild(i);
+
+      span.innerHTML += " Finding information";
+
+      menuItem.appendChild(span);
+      return menuItem;
+    };
+
+    const menuItemFun = menuItems();
+
+    const menuItemsSel = () => {
+      const menuItem = document.createElement("div");
+      menuItem.classList.add("menuItem", "selected");
+
+      const span = document.createElement("span");
+
+      const i = document.createElement("i");
+      i.classList.add("fa-solid", "fa-pen-nib");
+
+      span.appendChild(i);
+
+      span.innerHTML += " Help for designers";
+
+      const p = document.createElement("p");
+      p.innerHTML =
+        "AI-powered applications can analyze vast amounts of visual data and provide designers with inspiration for their creative projects.";
+
+      menuItem.appendChild(span);
+      menuItem.appendChild(p);
+
+      return menuItem;
+    };
+
+    const menuItemSel = menuItemsSel();
+
+    const menuItems3 = () => {
+      const menuItem = document.createElement("div");
+      menuItem.classList.add("menuItem");
+
+      const span = document.createElement("span");
+
+      const i = document.createElement("i");
+      i.classList.add("fa-solid", "fa-house-chimney");
+
+      span.appendChild(i);
+
+      span.innerHTML += " Home automation";
+
+      menuItem.appendChild(span);
+      return menuItem;
+    };
+
+    const menuItem3Fun = menuItems3();
+
+    const menuItems4 = () => {
+      const menuItem = document.createElement("div");
+      menuItem.classList.add("menuItem");
+
+      const span = document.createElement("span");
+
+      const i = document.createElement("i");
+      i.classList.add("fa-brands", "fa-youtube");
+
+      span.appendChild(i);
+
+      span.innerHTML += " Entertainment";
+
+      menuItem.appendChild(span);
+      return menuItem;
+    };
+
+    const menuItems4Fun = menuItems4();
+
+    const menuItems5 = () => {
+      const menuItem = document.createElement("div");
+      menuItem.classList.add("menuItem");
+
+      const span = document.createElement("span");
+
+      const i = document.createElement("i");
+      i.classList.add("fa-solid", "fa-calendar-days");
+
+      span.appendChild(i);
+
+      span.innerHTML += " Planning assistance";
+
+      menuItem.appendChild(span);
+      return menuItem;
+    };
+
+    const menuItems5Fun = menuItems5();
+
+    chatContainer.appendChild(menuItemFun);
+    chatContainer.appendChild(menuItemSel);
+    chatContainer.appendChild(menuItem3Fun);
+    chatContainer.appendChild(menuItems4Fun);
+    chatContainer.appendChild(menuItems5Fun);
+
+    return chatContainer;
+  };
+  const chatContainer = chatContainerFun();
+
+  document.body.appendChild(appContainer);
+  appContainer.appendChild(row);
+  row.appendChild(profileImg);
+  row.appendChild(chatContainer);
+};
+
+appContainer();
