@@ -1,0 +1,130 @@
+.testimonials {
+  margin-top: 17rem;
+  position: relative;
+  width: 70rem;
+  left: 3rem;
+}
+
+.mainBox {
+  display: flex;
+}
+
+.testimonialsP {
+  max-width: 71%;
+}
+
+.box {
+  width: 50rem;
+  height: 20rem;
+
+  p {
+    top: 1rem;
+    left: 1rem;
+    position: relative;
+  }
+
+  &.box1 {
+    background-color: #ccbafe;
+    top: 2rem;
+  }
+
+  &.box2 {
+    background-color: #a5e4f9;
+    top: 3rem;
+  }
+}
+
+.box h1 {
+  text-align: center;
+  right: 4rem;
+  position: relative;
+  font-size: 43px;
+}
+
+.box .secondBox {
+  background: #bbf99e;
+  border-radius: 1rem;
+  border: none;
+  width: 19rem;
+  height: 15rem;
+  top: 2rem;
+  position: relative;
+}
+
+.box1 .disF {
+  top: 2rem;
+  position: relative;
+}
+
+.box2 img {
+  width: 3rem;
+  border-radius: 4rem;
+  height: 3rem;
+  object-fit: cover;
+  top: 3.75rem;
+  position: relative;
+  left: 1rem;
+}
+.boxS {
+  width: 50rem;
+  height: 20rem;
+}
+
+.box2 div {
+  background-color: #a5e4f9;
+  top: 1.625rem;
+  position: relative;
+}
+
+.box1 div {
+  background-color: #ccbafe;
+}
+
+.box .secondBox {
+  top: 2rem;
+}
+
+.box img,
+.box1 img,
+.box2 img {
+  width: 3rem;
+  border-radius: 4rem;
+  height: 3rem;
+  object-fit: cover;
+  top: 3.75rem;
+  position: relative;
+  left: 1rem;
+}
+
+.information {
+  top: 1.625rem;
+  left: 1rem;
+  position: relative;
+}
+
+.box2 .secondBox {
+  top: 3rem;
+}
+
+.box1 .secondBox,
+.box2 .secondBox {
+  border-radius: 1rem;
+  border: none;
+  width: 19rem;
+  height: 15rem;
+}
+
+.secondBox p {
+  top: 1rem;
+  left: 1rem;
+  position: relative;
+}
+
+.disF {
+  display: flex;
+}
+
+.secondBox {
+  top: 2rem;
+  position: relative;
+}
