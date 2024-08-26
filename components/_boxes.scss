@@ -1,0 +1,64 @@
+// components/_boxes.scss
+.boxes {
+  display: flex;
+  gap: 2rem;
+  top: 2rem;
+  position: relative;
+
+  .paragraph {
+    left: 1rem;
+    top: 1rem;
+    position: relative;
+    max-width: 90%;
+  }
+
+  .imgProfileBox {
+    top: 6rem;
+    left: 1rem;
+    position: relative;
+  }
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    top: 0.8125rem;
+    position: relative;
+  }
+
+  .imgProfileBox {
+    display: flex;
+  }
+
+  .firstBox,
+  .secondBox,
+  .thirdBox {
+    width: 50rem;
+    border-radius: 2rem;
+    height: 18rem;
+  }
+
+  .firstBox {
+    background-color: $firstBox-bg;
+  }
+
+  .secondBox {
+    background-color: $secondBox-bg;
+
+    .testimonialsP {
+      left: 6rem;
+      position: relative;
+    }
+  }
+
+  .thirdBox {
+    background-color: $thirdBox-bg;
+
+    .testimonialsP {
+      left: 11rem;
+      position: relative;
+      max-width: 60%;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.textBox {
+  display: flex;
+  gap: 5rem;
+
+  .secondTextBox {
+    left: 7rem;
+    position: relative;
+
+    p {
+      max-width: 72%;
+      left: -5rem;
+      position: relative;
+    }
+  }
+
+  .thirdTextBox {
+    left: -3rem;
+    position: relative;
+  }
+}

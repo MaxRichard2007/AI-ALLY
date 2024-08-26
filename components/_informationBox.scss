@@ -1,0 +1,16 @@
+.informationBox {
+  left: 0.5rem;
+  position: relative;
+}
+
+.firstBox .informationBox p,
+.secondBox .informationBox p,
+.thirdBox .informationBox p {
+  margin-bottom: -5px;
+}
+
+.firstBox .informationBox p:last-child,
+.secondBox .informationBox p:last-child,
+.thirdBox .informationBox p:last-child {
+  margin-bottom: 0;
+}

@@ -64,113 +64,6 @@ button {
     transition: 0.5s;
     background: #d9d9d9; }
 
-.testimonials {
-  margin-top: 17rem;
-  position: relative;
-  width: 70rem;
-  left: 3rem; }
-
-.mainBox {
-  display: flex; }
-
-.testimonialsP {
-  max-width: 71%; }
-
-.box {
-  width: 50rem;
-  height: 20rem; }
-  .box p {
-    top: 1rem;
-    left: 1rem;
-    position: relative; }
-  .box.box1 {
-    background-color: #ccbafe;
-    top: 2rem; }
-  .box.box2 {
-    background-color: #a5e4f9;
-    top: 3rem; }
-
-.box h1 {
-  text-align: center;
-  right: 4rem;
-  position: relative;
-  font-size: 43px; }
-
-.box .secondBox {
-  background: #bbf99e;
-  border-radius: 1rem;
-  border: none;
-  width: 19rem;
-  height: 15rem;
-  top: 2rem;
-  position: relative; }
-
-.box1 .disF {
-  top: 2rem;
-  position: relative; }
-
-.box2 img {
-  width: 3rem;
-  border-radius: 4rem;
-  height: 3rem;
-  object-fit: cover;
-  top: 3.75rem;
-  position: relative;
-  left: 1rem; }
-
-.boxS {
-  width: 50rem;
-  height: 20rem; }
-
-.box2 div {
-  background-color: #a5e4f9;
-  top: 1.625rem;
-  position: relative; }
-
-.box1 div {
-  background-color: #ccbafe; }
-
-.box .secondBox {
-  top: 2rem; }
-
-.box img,
-.box1 img,
-.box2 img {
-  width: 3rem;
-  border-radius: 4rem;
-  height: 3rem;
-  object-fit: cover;
-  top: 3.75rem;
-  position: relative;
-  left: 1rem; }
-
-.information {
-  top: 1.625rem;
-  left: 1rem;
-  position: relative; }
-
-.box2 .secondBox {
-  top: 3rem; }
-
-.box1 .secondBox,
-.box2 .secondBox {
-  border-radius: 1rem;
-  border: none;
-  width: 19rem;
-  height: 15rem; }
-
-.secondBox p {
-  top: 1rem;
-  left: 1rem;
-  position: relative; }
-
-.disF {
-  display: flex; }
-
-.secondBox {
-  top: 2rem;
-  position: relative; }
-
 .stats {
   display: flex;
   gap: 30px;
@@ -242,6 +135,77 @@ button {
   position: relative;
   left: 4rem; }
 
+.textBox {
+  display: flex;
+  gap: 5rem; }
+  .textBox .secondTextBox {
+    left: 7rem;
+    position: relative; }
+    .textBox .secondTextBox p {
+      max-width: 72%;
+      left: -5rem;
+      position: relative; }
+  .textBox .thirdTextBox {
+    left: -3rem;
+    position: relative; }
+
+.boxes {
+  display: flex;
+  gap: 2rem;
+  top: 2rem;
+  position: relative; }
+  .boxes .paragraph {
+    left: 1rem;
+    top: 1rem;
+    position: relative;
+    max-width: 90%; }
+  .boxes .imgProfileBox {
+    top: 6rem;
+    left: 1rem;
+    position: relative; }
+  .boxes img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 2rem;
+    object-fit: cover;
+    top: 0.8125rem;
+    position: relative; }
+  .boxes .imgProfileBox {
+    display: flex; }
+  .boxes .firstBox,
+  .boxes .secondBox,
+  .boxes .thirdBox {
+    width: 50rem;
+    border-radius: 2rem;
+    height: 18rem; }
+  .boxes .firstBox {
+    background-color: #bbf99e; }
+  .boxes .secondBox {
+    background-color: #ccbafe; }
+    .boxes .secondBox .testimonialsP {
+      left: 6rem;
+      position: relative; }
+  .boxes .thirdBox {
+    background-color: #a5e4f9; }
+    .boxes .thirdBox .testimonialsP {
+      left: 11rem;
+      position: relative;
+      max-width: 60%; }
+
+.informationBox {
+  left: 0.5rem;
+  position: relative; }
+
+.firstBox .informationBox p,
+.secondBox .informationBox p,
+.thirdBox .informationBox p {
+  margin-bottom: -5px; }
+
+.firstBox .informationBox p:last-child,
+.secondBox .informationBox p:last-child,
+.thirdBox .informationBox p:last-child {
+  margin-bottom: 0; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -296,6 +260,14 @@ button {
     width: 60rem; }
     .appContainer .row .profileImg img {
       width: 26rem; }
+
+.testimonials {
+  width: 65rem;
+  left: 6rem;
+  position: relative;
+  top: 15rem; }
+  .testimonials .Testimonials h1 {
+    font-size: 3rem; }
 
 .differentDes {
   width: 75rem;
