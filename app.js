@@ -477,3 +477,214 @@ const appContainer = () => {
 };
 
 appContainer();
+
+const testimonials = () => {
+  const testimonials = document.createElement("div");
+  testimonials.classList.add("testimonials");
+
+  const textBoxFun = () => {
+    const textBox = document.createElement("div");
+    textBox.classList.add("textBox");
+
+    const testimonialsFun = () => {
+      const Testimonials = document.createElement("div");
+      Testimonials.classList.add("Testimonials");
+
+      const h1 = document.createElement("h1");
+      h1.innerHTML = "Testimonials";
+
+      Testimonials.appendChild(h1);
+      return Testimonials;
+    };
+
+    const testimonials = testimonialsFun();
+
+    const secondTextBoxFun = () => {
+      const secondTextBox = document.createElement("div");
+      secondTextBox.classList.add("secondTextBox");
+
+      const p = document.createElement("p");
+      p.classList.add("testimonialsP");
+      p.innerHTML =
+        "Don't just take our word for it - hear from our satishied clients who have experienced the transformative impact of our AI text tool.";
+
+      secondTextBox.appendChild(p);
+      return secondTextBox;
+    };
+
+    const secondTextBox = secondTextBoxFun();
+
+    const thirdTextBoxFun = () => {
+      const thirdTextBox = document.createElement("div");
+      thirdTextBox.classList.add("thirdTextBox");
+
+      const p = document.createElement("p");
+      p.classList.add("testimonialsP");
+      p.innerHTML =
+        "Learn how this powerful tool has revolutionized their work and accelerated their success.";
+
+      thirdTextBox.appendChild(p);
+      return thirdTextBox;
+    };
+
+    const thirdTextBox = thirdTextBoxFun();
+
+    textBox.appendChild(testimonials);
+    textBox.appendChild(secondTextBox);
+    textBox.appendChild(thirdTextBox);
+    return textBox;
+  };
+  const textBox = textBoxFun();
+
+  const boxesFun = () => {
+    const boxes = document.createElement("div");
+    boxes.classList.add("boxes");
+
+    const firstBoxFun = () => {
+      const firstBox = document.createElement("div");
+      firstBox.classList.add("firstBox");
+
+      const p = document.createElement("p");
+      p.classList.add("paragraph");
+      p.innerHTML = `"The excellent voice recognition quality of AI Ally app makes it perfect for dictation and note taking. I have never come across such accuracy before"`;
+
+      const imgProfileBoxFun = () => {
+        const imgProfileBox = document.createElement("div");
+        imgProfileBox.classList.add("imgProfileBox");
+
+        const img = document.createElement("img");
+        img.src = "img/girl.jpeg";
+
+        const informationBoxFun = () => {
+          const informationBox = document.createElement("informationBox");
+          informationBox.classList.add("informationBox");
+
+          const p = document.createElement("p");
+          p.innerHTML = "Craig Jordan";
+
+          const p2 = document.createElement("p");
+          p2.innerHTML = "CEO, Aveva";
+
+          informationBox.appendChild(p);
+          informationBox.appendChild(p2);
+          return informationBox;
+        };
+
+        const informationBox = informationBoxFun();
+
+        imgProfileBox.appendChild(img);
+        imgProfileBox.appendChild(informationBox);
+        return imgProfileBox;
+      };
+      const imgProfileBox = imgProfileBoxFun();
+
+      firstBox.appendChild(p);
+      firstBox.appendChild(imgProfileBox);
+      return firstBox;
+    };
+    const firstBox = firstBoxFun();
+
+    const secondBoxFun = () => {
+      const secondBox = document.createElement("div");
+      secondBox.classList.add("secondBox");
+
+      const p = document.createElement("p");
+      p.classList.add("paragraph");
+      p.innerHTML = `"With the help of AI Ally, my work has become much easier and efficient. It provides quick and accurate answers to any questions I come across"`;
+
+      const imgProfileBoxFun = () => {
+        const imgProfileBox = document.createElement("div");
+        imgProfileBox.classList.add("imgProfileBox");
+
+        const img = document.createElement("img");
+        img.src = "img/guys.jpg";
+
+        const informationBoxFun = () => {
+          const informationBox = document.createElement("div");
+          informationBox.classList.add("informationBox");
+
+          const p = document.createElement("p");
+          p.innerHTML = "David Smith";
+
+          const p2 = document.createElement("p");
+          p2.innerHTML = "Head of HR, Instill";
+
+          informationBox.appendChild(p);
+          informationBox.appendChild(p2);
+          return informationBox;
+        };
+
+        const informationBox = informationBoxFun();
+
+        imgProfileBox.appendChild(img);
+        imgProfileBox.appendChild(informationBox);
+        return imgProfileBox;
+      };
+
+      const imgProfileBox = imgProfileBoxFun();
+
+      secondBox.appendChild(p);
+      secondBox.appendChild(imgProfileBox);
+      return secondBox;
+    };
+    const secondBox = secondBoxFun();
+
+    const thirdBoxFun = () => {
+      const thirdBox = document.createElement("div");
+      thirdBox.classList.add("thirdBox");
+
+      const p = document.createElement("p");
+      p.classList.add("paragraph");
+      p.innerHTML = `"I love how AI ally personalizes to my needs and offers recommendations and solutions based on my perferences and behaviors"`;
+
+      const imgProfileBoxFun = () => {
+        const imgProfileBox = document.createElement("div");
+        imgProfileBox.classList.add("imgProfileBox");
+
+        const img = document.createElement("img");
+        img.src = "img/faceOfGuy2.jpeg";
+
+        const informationBoxFun = () => {
+          const informationBox = document.createElement("div");
+          informationBox.classList.add("informationBox");
+
+          const p = document.createElement("p");
+          p.innerHTML = "Marilyn Long";
+
+          const p2 = document.createElement("p");
+          p2.innerHTML = "UX Designer, Cyber Unit";
+
+          informationBox.appendChild(p);
+          informationBox.appendChild(p2);
+          return informationBox;
+        };
+
+        const informationBox = informationBoxFun();
+
+        imgProfileBox.appendChild(img);
+        imgProfileBox.appendChild(informationBox);
+        return imgProfileBox;
+      };
+
+      const imgProfileBox = imgProfileBoxFun();
+
+      thirdBox.appendChild(p);
+      thirdBox.appendChild(imgProfileBox);
+      return thirdBox;
+    };
+    const thirdBox = thirdBoxFun();
+
+    boxes.appendChild(firstBox);
+    boxes.appendChild(secondBox);
+    boxes.appendChild(thirdBox);
+    return boxes;
+  };
+
+  const boxes = boxesFun();
+
+  document.body.appendChild(testimonials);
+  testimonials.appendChild(textBox);
+  testimonials.appendChild(boxes);
+};
+
+testimonials();
