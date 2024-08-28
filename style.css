@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+.plans {
+  top: 25rem;
+  position: relative;
+  background: #181a1b;
+  border-radius: 3rem;
+  width: 70rem;
+  height: 70rem;
+  left: 3rem;
+  color: white; }
+  .plans .mainBox {
+    left: 3rem;
+    position: relative;
+    top: 2rem;
+    width: 64rem; }
+    .plans .mainBox .custom-divider {
+      background-color: rgba(0, 0, 3, 0.2);
+      margin: 10px 0;
+      height: 2px; }
+    .plans .mainBox .box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px; }
+      .plans .mainBox .box .status {
+        width: 26rem;
+        justify-content: space-between;
+        display: flex; }
+        .plans .mainBox .box .status span {
+          width: 8rem; }
+    .plans .mainBox .subscription {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 20px;
+      background-color: #262728;
+      border-radius: 8px; }
+    .plans .mainBox .subscription-options {
+      display: flex;
+      gap: 20px; }
+      .plans .mainBox .subscription-options span {
+        width: 8rem;
+        height: 2rem;
+        border-radius: 5px; }
+        .plans .mainBox .subscription-options span p {
+          position: relative;
+          left: 0.5rem;
+          color: #2f3a2e; }
+      .plans .mainBox .subscription-options .basic {
+        background: #bbf99e; }
+        .plans .mainBox .subscription-options .basic .fas {
+          left: 4rem; }
+      .plans .mainBox .subscription-options .advanced {
+        background: #ccbafe; }
+      .plans .mainBox .subscription-options .premium {
+        background: #edd087; }
+    .plans .mainBox .subscription-options span {
+      display: flex;
+      align-items: center; }
+    .plans .mainBox .subscription-options i {
+      margin-left: 5px;
+      color: #888;
+      left: 2rem;
+      position: relative; }
+
 body {
   margin: 0;
   padding: 0;
