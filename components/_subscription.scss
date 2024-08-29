@@ -1,0 +1,53 @@
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #262728;
+  border-radius: 8px;
+}
+
+.subscription-options {
+  display: flex;
+  gap: 20px;
+
+  span {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px;
+
+    p {
+      position: relative;
+      left: 0.5rem;
+      color: #2f3a2e;
+    }
+  }
+
+  .basic {
+    background: #bbf99e;
+
+    .fas {
+      left: 4rem;
+    }
+  }
+
+  .advanced {
+    background: #ccbafe;
+  }
+
+  .premium {
+    background: #edd087;
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+  }
+
+  i {
+    margin-left: 5px;
+    color: #888;
+    left: 2rem;
+    position: relative;
+  }
+}

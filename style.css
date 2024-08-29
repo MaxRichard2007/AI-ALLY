@@ -1,68 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
-.plans {
-  top: 25rem;
-  position: relative;
-  background: #181a1b;
-  border-radius: 3rem;
-  width: 70rem;
-  height: 70rem;
-  left: 3rem;
-  color: white; }
-  .plans .mainBox {
-    left: 3rem;
-    position: relative;
-    top: 2rem;
-    width: 64rem; }
-    .plans .mainBox .custom-divider {
-      background-color: rgba(0, 0, 3, 0.2);
-      margin: 10px 0;
-      height: 2px; }
-    .plans .mainBox .box {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px 20px; }
-      .plans .mainBox .box .status {
-        width: 26rem;
-        justify-content: space-between;
-        display: flex; }
-        .plans .mainBox .box .status span {
-          width: 8rem; }
-    .plans .mainBox .subscription {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px 20px;
-      background-color: #262728;
-      border-radius: 8px; }
-    .plans .mainBox .subscription-options {
-      display: flex;
-      gap: 20px; }
-      .plans .mainBox .subscription-options span {
-        width: 8rem;
-        height: 2rem;
-        border-radius: 5px; }
-        .plans .mainBox .subscription-options span p {
-          position: relative;
-          left: 0.5rem;
-          color: #2f3a2e; }
-      .plans .mainBox .subscription-options .basic {
-        background: #bbf99e; }
-        .plans .mainBox .subscription-options .basic .fas {
-          left: 4rem; }
-      .plans .mainBox .subscription-options .advanced {
-        background: #ccbafe; }
-      .plans .mainBox .subscription-options .premium {
-        background: #edd087; }
-    .plans .mainBox .subscription-options span {
-      display: flex;
-      align-items: center; }
-    .plans .mainBox .subscription-options i {
-      margin-left: 5px;
-      color: #888;
-      left: 2rem;
-      position: relative; }
-
 body {
   margin: 0;
   padding: 0;
@@ -270,6 +206,173 @@ button {
 .thirdBox .informationBox p:last-child {
   margin-bottom: 0; }
 
+.plans {
+  top: 17rem;
+  position: relative;
+  background: #181a1b;
+  border-radius: 3rem;
+  width: 75rem;
+  height: 70rem;
+  left: 1rem;
+  color: white; }
+
+.mainBox {
+  left: 3rem;
+  position: relative;
+  top: 2rem;
+  width: 64rem; }
+  .mainBox .custom-divider {
+    background-color: rgba(0, 0, 3, 0.2);
+    margin: 10px 0;
+    height: 2px; }
+  .mainBox .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px; }
+    .mainBox .box .status {
+      width: 26rem;
+      justify-content: space-between;
+      display: flex; }
+      .mainBox .box .status span {
+        width: 8rem; }
+
+.subscription {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: #262728;
+  border-radius: 8px; }
+
+.subscription-options {
+  display: flex;
+  gap: 20px; }
+  .subscription-options span {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 5px; }
+    .subscription-options span p {
+      position: relative;
+      left: 0.5rem;
+      color: #2f3a2e; }
+  .subscription-options .basic {
+    background: #bbf99e; }
+    .subscription-options .basic .fas {
+      left: 4rem; }
+  .subscription-options .advanced {
+    background: #ccbafe; }
+  .subscription-options .premium {
+    background: #edd087; }
+  .subscription-options span {
+    display: flex;
+    align-items: center; }
+  .subscription-options i {
+    margin-left: 5px;
+    color: #888;
+    left: 2rem;
+    position: relative; }
+
+.secondBox2 {
+  width: 35rem;
+  left: 11rem;
+  top: 10rem;
+  position: relative;
+  display: flex; }
+  .secondBox2 .download h1 {
+    font-size: 3rem; }
+  .secondBox2 .download p {
+    text-align: left;
+    top: -1rem;
+    position: relative; }
+  .secondBox2 .download .logo {
+    display: flex; }
+    .secondBox2 .download .logo .downloadIcon {
+      width: 12.3rem;
+      height: 3.5rem;
+      background: black;
+      border-radius: 8px;
+      display: flex;
+      border: 1px solid white; }
+      .secondBox2 .download .logo .downloadIcon i {
+        font-size: 2.5rem;
+        top: 8px;
+        left: 15px;
+        position: relative; }
+      .secondBox2 .download .logo .downloadIcon .text {
+        left: 1.75rem;
+        position: relative; }
+        .secondBox2 .download .logo .downloadIcon .text .p {
+          text-align: left;
+          top: -0.5rem;
+          position: relative;
+          font-size: 13px;
+          left: 0.5rem;
+          max-width: 100%; }
+        .secondBox2 .download .logo .downloadIcon .text .p2 {
+          position: relative;
+          left: 0.5rem;
+          font-size: 22px;
+          top: -3rem;
+          max-width: 100%; }
+    .secondBox2 .download .logo .googlePlay {
+      width: 12.3rem;
+      height: 3.5rem;
+      background: black;
+      border-radius: 8px;
+      display: flex;
+      border: 1px solid white;
+      left: 1rem;
+      position: relative; }
+      .secondBox2 .download .logo .googlePlay i {
+        font-size: 3rem;
+        top: 4px;
+        left: 15px;
+        position: relative; }
+      .secondBox2 .download .logo .googlePlay .text {
+        left: 1.75rem;
+        position: relative;
+        width: 8rem; }
+        .secondBox2 .download .logo .googlePlay .text .p {
+          top: 1px;
+          position: relative;
+          font-size: 11px;
+          left: 0.5rem;
+          max-width: 100%;
+          text-align: start; }
+        .secondBox2 .download .logo .googlePlay .text .p2 {
+          position: relative;
+          font-size: 18px;
+          top: -2rem;
+          display: flex;
+          max-width: 100%;
+          left: 6px; }
+  .secondBox2 .img {
+    width: 19rem;
+    top: -6rem;
+    position: relative;
+    left: 8rem; }
+    .secondBox2 .img img {
+      width: 19rem; }
+
+.custom-divider2 {
+  width: 74rem;
+  background-color: rgba(0, 0, 3, 0.2);
+  margin: 10px 0;
+  height: 2px;
+  top: 27rem;
+  position: relative;
+  left: 1rem; }
+
+.down {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+  top: 27rem;
+  position: relative;
+  width: 74rem;
+  left: 1rem; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -297,6 +400,40 @@ button {
       .header .center-header-section ul li a:hover {
         color: #6e6e6e;
         transition: 0.2s; }
+
+.footer {
+  top: 27rem;
+  position: relative;
+  width: 73rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center; }
+  .footer .left-section {
+    display: flex; }
+    .footer .left-section img {
+      width: 3rem; }
+    .footer .left-section p {
+      padding-left: 1rem;
+      color: #181a1b; }
+  .footer .center-section ul {
+    display: flex;
+    gap: 20px; }
+    .footer .center-section ul li {
+      list-style-type: none; }
+      .footer .center-section ul li a {
+        text-decoration: none;
+        color: #181a1b; }
+  .footer .right-section ul li {
+    list-style-type: none; }
+  .footer .right-section ul {
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+    margin: 0px; }
+    .footer .right-section ul li a {
+      text-decoration: none;
+      color: #131313; }
 
 .heroSection {
   display: flex;

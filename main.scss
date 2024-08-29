@@ -1,14 +1,14 @@
-// abstracts
+// Abstracts
 @import "abstracts/variables";
 @import "abstracts/mixins";
 @import "abstracts/functions";
 
-// base
+// Base
 @import "base/reset";
 @import "base/typography";
 @import "base/base";
 
-// components
+// Components
 @import "components/buttons";
 @import "components/cards";
 @import "components/stats";
@@ -17,8 +17,13 @@
 @import "components/textBox";
 @import "components/boxes";
 @import "components/informationBox";
+@import "components/plans";
+@import "components/mainBox";
+@import "components/subscription";
+@import "components/secondBox2";
+@import "components/dividers";
 
-// layout
+// Layout
 @import "layout/header";
 @import "layout/footer";
 @import "layout/grid";
@@ -26,15 +31,15 @@
 @import "layout/container";
 @import "layout/testimonials";
 
-// pages
+// Pages
 @import "pages/home";
 @import "pages/about";
 @import "pages/contact";
 
-// themes
+// Themes
 @import "themes/theme-dark";
-@import "themes/theme-lilght";
+@import "themes/theme-light";
 
-// vendors
+// Vendors
 @import "vendors/normalize";
-@import "vendors/-bootstrap";
+@import "vendors/_bootstrap.scss";

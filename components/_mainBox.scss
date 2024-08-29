@@ -1,0 +1,29 @@
+.mainBox {
+  left: 3rem;
+  position: relative;
+  top: 2rem;
+  width: 64rem;
+
+  .custom-divider {
+    background-color: rgba(0, 0, 3, 0.2);
+    margin: 10px 0;
+    height: 2px;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+
+    .status {
+      width: 26rem;
+      justify-content: space-between;
+      display: flex;
+
+      span {
+        width: 8rem;
+      }
+    }
+  }
+}
