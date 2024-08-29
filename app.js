@@ -688,3 +688,620 @@ const testimonials = () => {
 };
 
 testimonials();
+
+// const plans = () => {
+//   const plans = document.createElement("div");
+//   plans.classList.add("plans");
+
+//   const mainBoxFun = () => {
+//     const mainBox = document.createElement("div");
+//     mainBox.classList.add("mainBox");
+
+//     const h1 = document.createElement("h1");
+//     h1.innerHTML = "Choose your favorite plan";
+
+//     const subscriptionFun = () => {
+//       const subscription = document.createElement("div");
+//       subscription.classList.add("subscription");
+
+//       const subscriptionLevelFun = () => {
+//         const subscriptionLevel = document.createElement("div");
+//         subscriptionLevel.classList.add("subscription-level");
+
+//         const h3 = document.createElement("h3");
+//         h3.innerHTML = "Subscription level";
+
+//         subscriptionLevel.appendChild(h3);
+//         return subscriptionLevel;
+//       };
+
+//       const subscriptionLevel = subscriptionLevelFun();
+
+//       const subscriptionOptionsFun = () => {
+//         const subscriptionOptions = document.createElement("div");
+//         subscriptionOptions.classList.add("subscription-options");
+
+//         const basicFun = () => {
+//           const basic = document.createElement("span");
+//           basic.classList.add("basic");
+
+//           const p = document.createElement("p");
+//           p.innerHTML = "Basic";
+
+//           const i = document.createElement("i");
+//           i.classList.add("fas", "fa-lightbulb");
+
+//           basic.appendChild(p);
+//           basic.appendChild(i);
+//           return basic;
+//         };
+
+//         const basic = basicFun();
+
+//         const advancedFun = () => {
+//           const advanced = document.createElement("span");
+//           advanced.classList.add("advanced");
+
+//           const p = document.createElement("p");
+//           p.innerHTML = "Advanced";
+
+//           const i = document.createElement("i");
+//           i.classList.add("fas", "fa-bolt");
+
+//           advanced.appendChild(p);
+//           advanced.appendChild(i);
+//           return advanced;
+//         };
+
+//         const advanced = advancedFun();
+
+//         const premiumFun = () => {
+//           const premium = document.createElement("span");
+//           premium.classList.add("premium");
+
+//           const p = document.createElement("p");
+//           p.innerHTML = "Premium";
+
+//           const i = document.createElement("i");
+//           i.classList.add("fas", "fa-crown");
+
+//           premium.appendChild(p);
+//           premium.appendChild(i);
+//           return premium;
+//         };
+
+//         const premium = premiumFun();
+
+//         subscriptionOptions.appendChild(basic);
+//         subscriptionOptions.appendChild(advanced);
+//         subscriptionOptions.appendChild(premium);
+//         return subscriptionOptions;
+//       };
+
+//       const subscriptionOptions = subscriptionOptionsFun();
+
+//       subscription.appendChild(subscriptionLevel);
+//       subscription.appendChild(subscriptionOptions);
+//       return subscription;
+//     };
+
+//     const subscription = subscriptionFun();
+
+//     const customDivider = (parent) => {
+//       const customDivider = document.createElement("div");
+//       customDivider.classList.add("custom-divider");
+
+//       parent.appendChild(customDivider);
+//     };
+
+//     const boxFun = () => {
+//       const box = document.createElement("div");
+//       box.classList.add("box");
+
+//       const h3 = document.createElement("div");
+//       h3.innerHTML = "Number of Users";
+
+//       const statusFun = () => {
+//         const status = document.createElement("div");
+//         status.classList.add("status");
+
+//         const span1 = document.createElement("span");
+//         span1.innerHTML = "1";
+
+//         const span2 = document.createElement("span");
+//         span2.innerHTML = "Up to 5";
+
+//         const span3 = document.createElement("span");
+//         span3.innerHTML = "Unlimited";
+
+//         status.appendChild(span1);
+//         status.appendChild(span2);
+//         status.appendChild(span3);
+
+//         return status;
+//       };
+
+//       const status = statusFun();
+
+//       box.appendChild(h3);
+//       box.appendChild(status);
+//       return box;
+//     };
+//     customDivider(mainBox);
+//     const box = boxFun();
+
+//     const box2Fun = () => {
+//       const box = document.createElement("div");
+//       box.classList.add("box");
+
+//       const h3 = document.createElement("div");
+//       h3.innerHTML = "Customer Support";
+
+//       const statusFun = () => {
+//         const status = document.createElement("div");
+//         status.classList.add("status");
+
+//         const span1 = document.createElement("span");
+//         span1.innerHTML = "Online";
+
+//         const span2 = document.createElement("span");
+//         span2.innerHTML = "Priority";
+
+//         const span3 = document.createElement("span");
+//         span3.innerHTML = "Preminum";
+
+//         status.appendChild(span1);
+//         status.appendChild(span2);
+//         status.appendChild(span3);
+
+//         return status;
+//       };
+
+//       const status = statusFun();
+//       box.appendChild(h3);
+//       box.appendChild(status);
+//       return box;
+//     };
+//     customDivider(mainBox);
+//     const box2 = box2Fun();
+
+//     const box3Fun = () => {
+//       const box = document.createElement("div");
+//       box.classList.add("box");
+
+//       const h3 = document.createElement("div");
+//       h3.innerHTML = "Monthly Requests";
+
+//       const statusFun = () => {
+//         const status = document.createElement("div");
+//         status.classList.add("status");
+
+//         const span = document.createElement("span");
+
+//         const span1 = document.createElement("span");
+//         span1.innerHTML = "1000";
+
+//         const span2 = document.createElement("span");
+//         span2.innerHTML = "5000";
+
+//         const span3 = document.createElement("span");
+//         span3.innerHTML = "Unlimited";
+
+//         status.appendChild(span1);
+//         status.appendChild(span2);
+//         status.appendChild(span3);
+//         return status;
+//       };
+
+//       const status = statusFun();
+
+//       box.appendChild(h3);
+//       box.appendChild(status);
+//       return box;
+//     };
+//     customDivider(mainBox);
+//     const box3 = box3Fun();
+
+//     const box4Fun = () => {
+//       const box = document.createElement("div");
+//       box.classList.add("box");
+
+//       const h3 = document.createElement("div");
+//       h3.innerHTML = "Data Packages";
+
+//       const statusFun = () => {
+//         const status = document.createElement("div");
+//         status.classList.add("status");
+
+//         const span = document.createElement("span");
+
+//         const span1 = document.createElement("span");
+//         span1.innerHTML = "1 GB";
+
+//         const span2 = document.createElement("span");
+//         span1.innerHTML = "5 GB";
+
+//         const span3 = document.createElement("span");
+//         span1.innerHTML = "10 GB";
+
+//         status.appendChild(span1);
+//         status.appendChild(span2);
+//         status.appendChild(span3);
+//         return status;
+//       };
+
+//       const status = statusFun();
+
+//       box.appendChild(h3);
+//       box.appendChild(status);
+//       return box;
+//     };
+//     customDivider(mainBox);
+//     const box4 = box4Fun();
+
+//     const box5Fun = () => {
+//       const box = document.createElement("div");
+//       box.classList.add("box");
+
+//       const h3 = document.createElement("div");
+//       h3.innerHTML = "Flexible Cancellation";
+
+//       const statusFun = () => {
+//         const status = document.createElement("div");
+//         status.classList.add("status");
+
+//         const span = document.createElement("span");
+
+//         const span1 = document.createElement("span");
+//         span1.innerHTML = "Available";
+
+//         const span2 = document.createElement("span");
+//         span1.innerHTML = "Available";
+
+//         const span3 = document.createElement("span");
+//         span1.innerHTML = "Available";
+
+//         status.appendChild(span1);
+//         status.appendChild(span2);
+//         status.appendChild(span3);
+//         return status;
+//       };
+
+//       const status = statusFun();
+
+//       box.appendChild(h3);
+//       box.appendChild(status);
+//       return box;
+//     };
+//     customDivider(mainBox);
+//     const box5 = box5Fun();
+
+//     const box6Fun = () => {
+//       const box = document.createElement("div");
+//       box.classList.add("box");
+
+//       const h3 = document.createElement("div");
+//       h3.innerHTML = "Monthly Cost";
+
+//       const statusFun = () => {
+//         const status = document.createElement("div");
+//         status.classList.add("status");
+
+//         const span = document.createElement("span");
+
+//         const span1 = document.createElement("span");
+//         span1.innerHTML = "$9.99";
+//         const span2 = document.createElement("span");
+//         span2.innerHTML = "$19.99";
+//         const span3 = document.createElement("span");
+//         span3.innerHTML = "$39.99";
+
+//         status.appendChild(span1);
+//         status.appendChild(span2);
+//         status.appendChild(span3);
+//         return status;
+//       };
+
+//       const status = statusFun();
+
+//       box.appendChild(h3);
+//       box.appendChild(status);
+//       return box;
+//     };
+//     customDivider(mainBox);
+//     const box6 = box6Fun();
+
+//     mainBox.appendChild(h1);
+//     mainBox.appendChild(subscription);
+
+//     mainBox.appendChild(box);
+//     mainBox.appendChild(box2);
+//     mainBox.appendChild(box3);
+//     mainBox.appendChild(box4);
+//     mainBox.appendChild(box5);
+//     mainBox.appendChild(box6);
+//     return mainBox;
+//   };
+
+//   const mainBox = mainBoxFun();
+
+//   document.body.appendChild(plans);
+//   plans.appendChild(mainBox);
+// };
+
+// plans();
+
+// const plans = () => {
+//   const plans = document.createElement("div");
+//   plans.classList.add("plans");
+
+//   const mainBoxFun = () => {
+//     const mainBox = document.createElement("div");
+//     mainBox.classList.add("mainBox");
+
+//     const h1 = document.createElement("h1");
+//     h1.innerHTML = "Choose your favorite plan";
+
+//     const subscriptionFun = () => {
+//       const subscription = document.createElement("div");
+//       subscription.classList.add("subscription");
+
+//       const subscriptionLevelFun = () => {
+//         const subscriptionLevel = document.createElement("div");
+//         subscriptionLevel.classList.add("subscription-level");
+
+//         const h3 = document.createElement("h3");
+//         h3.innerHTML = "Subscription level";
+
+//         subscriptionLevel.appendChild(h3);
+//         return subscriptionLevel;
+//       };
+
+//       const subscriptionLevel = subscriptionLevelFun();
+
+//       const subscriptionOptionsFun = () => {
+//         const subscriptionOptions = document.createElement("div");
+//         subscriptionOptions.classList.add("subscription-options");
+
+//         const basicFun = () => {
+//           const basic = document.createElement("span");
+//           basic.classList.add("basic");
+
+//           const p = document.createElement("p");
+//           p.innerHTML = "Basic";
+
+//           const i = document.createElement("i");
+//           i.classList.add("fas", "fa-lightbulb");
+
+//           basic.appendChild(p);
+//           basic.appendChild(i);
+//           return basic;
+//         };
+
+//         const basic = basicFun();
+
+//         const advancedFun = () => {
+//           const advanced = document.createElement("span");
+//           advanced.classList.add("advanced");
+
+//           const p = document.createElement("p");
+//           p.innerHTML = "Advanced";
+
+//           const i = document.createElement("i");
+//           i.classList.add("fas", "fa-bolt");
+
+//           advanced.appendChild(p);
+//           advanced.appendChild(i);
+//           return advanced;
+//         };
+
+//         const advanced = advancedFun();
+
+//         const premiumFun = () => {
+//           const premium = document.createElement("span");
+//           premium.classList.add("premium");
+
+//           const p = document.createElement("p");
+//           p.innerHTML = "Premium";
+
+//           const i = document.createElement("i");
+//           i.classList.add("fas", "fa-crown");
+
+//           premium.appendChild(p);
+//           premium.appendChild(i);
+//           return premium;
+//         };
+
+//         const premium = premiumFun();
+
+//         subscriptionOptions.appendChild(basic);
+//         subscriptionOptions.appendChild(advanced);
+//         subscriptionOptions.appendChild(premium);
+//         return subscriptionOptions;
+//       };
+
+//       const subscriptionOptions = subscriptionOptionsFun();
+
+//       subscription.appendChild(subscriptionLevel);
+//       subscription.appendChild(subscriptionOptions);
+//       return subscription;
+//     };
+
+//     const subscription = subscriptionFun();
+
+//     const addBoxWithDivider = (parent, title, statuses) => {
+//       const box = document.createElement("div");
+//       box.classList.add("box");
+
+//       const h3 = document.createElement("div");
+//       h3.innerHTML = title;
+
+//       const statusFun = () => {
+//         const status = document.createElement("div");
+//         status.classList.add("status");
+
+//         statuses.forEach((text) => {
+//           const span = document.createElement("span");
+//           span.innerHTML = text;
+//           status.appendChild(span);
+//         });
+
+//         return status;
+//       };
+
+//       const status = statusFun();
+
+//       box.appendChild(h3);
+//       box.appendChild(status);
+//       parent.appendChild(box);
+
+//       // Add a custom divider after each box
+//       const customDivider = document.createElement("div");
+//       customDivider.classList.add("custom-divider");
+//       parent.appendChild(customDivider);
+//     };
+
+//     mainBox.appendChild(h1);
+//     mainBox.appendChild(subscription);
+
+//     // Add each box with its corresponding divider
+//     addBoxWithDivider(mainBox, "Number of Users", [
+//       "1",
+//       "Up to 5",
+//       "Unlimited",
+//     ]);
+//     addBoxWithDivider(mainBox, "Customer Support", [
+//       "Online",
+//       "Priority",
+//       "Premium",
+//     ]);
+//     addBoxWithDivider(mainBox, "Monthly Requests", [
+//       "1000",
+//       "5000",
+//       "Unlimited",
+//     ]);
+//     addBoxWithDivider(mainBox, "Data Packages", ["1 GB", "5 GB", "10 GB"]);
+//     addBoxWithDivider(mainBox, "Flexible Cancellation", [
+//       "Available",
+//       "Available",
+//       "Available",
+//     ]);
+//     addBoxWithDivider(mainBox, "Monthly Cost", ["$9.99", "$19.99", "$39.99"]);
+
+//     return mainBox;
+//   };
+
+//   const mainBox = mainBoxFun();
+
+//   document.body.appendChild(plans);
+//   plans.appendChild(mainBox);
+// };
+
+// plans();
+
+// const footer = () => {
+//   const footer = document.createElement("div");
+//   footer.classList.add("footer");
+
+//   const leftSectionFun = () => {
+//     const leftSection = document.createElement("div");
+//     leftSection.classList.add("left-section");
+
+//     const img = document.createElement("img");
+//     img.src = "img/Ninja Turtles icon.svg";
+
+//     const p = document.createElement("p");
+//     p.innerHTML = "AI ALLY";
+
+//     leftSection.appendChild(img);
+//     leftSection.appendChild(p);
+//     return leftSection;
+//   };
+
+//   const leftSection = leftSectionFun();
+
+//   const centerSectionFun = () => {
+//     const centerSection = document.createElement("div");
+//     centerSection.classList.add("center-section");
+
+//     const menuItems = [
+//       { text: "Home", href: "#" },
+//       { text: "Features", href: "#" },
+//       { text: "Pricing", href: "#" },
+//       { text: "Testimonials", href: "#" },
+//     ];
+
+//     const ul = document.createElement("ul");
+
+//     menuItems.forEach((item) => {
+//       const centerSection = document.createElement("div");
+//       centerSection.classList.add("center-section");
+
+//       const li = document.createElement("li");
+
+//       const a = document.createElement("a");
+//       a.textContent = item.text;
+//       a.href = item.href;
+
+//       centerSection.appendChild(ul);
+//       li.appendChild(a);
+//       ul.appendChild(li);
+
+//       return centerSection;
+//     });
+//   };
+
+//   const centerSection = centerSectionFun();
+
+//   document.body.appendChild(footer);
+//   footer.appendChild(leftSection);
+//   footer.appendChild(centerSection);
+// };
+
+// footer();
+
+const customDivider = () => {
+  const customDivider = document.createElement("div");
+  customDivider.classList.add("custom-divider2");
+
+  document.body.appendChild(customDivider);
+};
+
+customDivider();
+
+const down = () => {
+  const down = document.createElement("div");
+  down.classList.add("down");
+
+  const leftSectionFun = () => {
+    const leftSection = document.createElement("div");
+    leftSection.classList.add("left-section");
+
+    const p = document.createElement("p");
+    p.innerHTML = "Copyright © 2024 Ai Ally";
+
+    leftSection.appendChild(p);
+    return leftSection;
+  };
+
+  const leftSection = leftSectionFun();
+
+  const rightSectionFun = () => {
+    const rightSection = document.createElement("div");
+    rightSection.classList.add("right-section");
+
+    const p = document.createElement("p");
+    p.innerHTML = "Privacy Policy";
+
+    rightSection.appendChild(p);
+    return rightSection;
+  };
+
+  const rightSection = rightSectionFun();
+
+  document.body.appendChild(down);
+  down.appendChild(leftSection);
+  down.appendChild(rightSection);
+};
+
+down();
