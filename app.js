@@ -689,515 +689,473 @@ const testimonials = () => {
 
 testimonials();
 
-// const plans = () => {
-//   const plans = document.createElement("div");
-//   plans.classList.add("plans");
+const plans = () => {
+  const plans = document.createElement("div");
+  plans.classList.add("plans");
+
+  const mainBoxFun = () => {
+    const mainBox = document.createElement("div");
+    mainBox.classList.add("mainBox");
+
+    const h1 = document.createElement("h1");
+    h1.innerHTML = "Choose your favorite plan";
+
+    const subscriptionFun = () => {
+      const subscription = document.createElement("div");
+      subscription.classList.add("subscription");
+
+      const subscriptionLevelFun = () => {
+        const subscriptionLevel = document.createElement("div");
+        subscriptionLevel.classList.add("subscription-level");
+
+        const h3 = document.createElement("h3");
+        h3.innerHTML = "Subscription level";
+
+        subscriptionLevel.appendChild(h3);
+        return subscriptionLevel;
+      };
+      const subscriptionLevel = subscriptionLevelFun();
+
+      const subscriptionOptionsFun = () => {
+        const subscriptionOptions = document.createElement("div");
+        subscriptionOptions.classList.add("subscription-options");
+
+        const basicFun = () => {
+          const basic = document.createElement("span");
+          basic.classList.add("basic");
+
+          const p = document.createElement("p");
+          p.innerHTML = "Basic";
+
+          const i = document.createElement("i");
+          i.classList.add("fas", "fa-lightbulb");
 
-//   const mainBoxFun = () => {
-//     const mainBox = document.createElement("div");
-//     mainBox.classList.add("mainBox");
+          basic.appendChild(p);
+          p.appendChild(i);
+          return basic;
+        };
+        const basic = basicFun();
+
+        const advancedFun = () => {
+          const advanced = document.createElement("span");
+          advanced.classList.add("advanced");
+
+          const p = document.createElement("p");
+          p.innerHTML = "Advanced";
+
+          const i = document.createElement("i");
+          i.classList.add("fas", "fa-bolt");
 
-//     const h1 = document.createElement("h1");
-//     h1.innerHTML = "Choose your favorite plan";
+          advanced.appendChild(p);
+          p.appendChild(i);
+          return advanced;
+        };
+        const advanced = advancedFun();
+
+        const premiumFun = () => {
+          const premium = document.createElement("span");
+          premium.classList.add("premium");
 
-//     const subscriptionFun = () => {
-//       const subscription = document.createElement("div");
-//       subscription.classList.add("subscription");
+          const p = document.createElement("p");
+          p.innerHTML = "Premium";
 
-//       const subscriptionLevelFun = () => {
-//         const subscriptionLevel = document.createElement("div");
-//         subscriptionLevel.classList.add("subscription-level");
+          const i = document.createElement("i");
+          i.classList.add("fas", "fa-crown");
 
-//         const h3 = document.createElement("h3");
-//         h3.innerHTML = "Subscription level";
+          premium.appendChild(p);
+          p.appendChild(i);
+          return premium;
+        };
+        const premium = premiumFun();
 
-//         subscriptionLevel.appendChild(h3);
-//         return subscriptionLevel;
-//       };
+        subscriptionOptions.appendChild(basic);
+        subscriptionOptions.appendChild(advanced);
+        subscriptionOptions.appendChild(premium);
+        return subscriptionOptions;
+      };
+      const subscriptionOptions = subscriptionOptionsFun();
+
+      subscription.appendChild(subscriptionLevel);
+      subscription.appendChild(subscriptionOptions);
+      return subscription;
+    };
+    const subscription = subscriptionFun();
 
-//       const subscriptionLevel = subscriptionLevelFun();
+    const boxFun = () => {
+      const boxFun = () => {
+        const box = document.createElement("div");
+        box.classList.add("box");
 
-//       const subscriptionOptionsFun = () => {
-//         const subscriptionOptions = document.createElement("div");
-//         subscriptionOptions.classList.add("subscription-options");
+        const h3 = document.createElement("h3");
+        h3.innerHTML = "Number of Users";
 
-//         const basicFun = () => {
-//           const basic = document.createElement("span");
-//           basic.classList.add("basic");
+        const statusFun = () => {
+          const status = document.createElement("div");
+          status.classList.add("status");
 
-//           const p = document.createElement("p");
-//           p.innerHTML = "Basic";
+          const spans = [
+            { text: "1" },
+            { text: "up to 5" },
+            { text: "Unlimited" },
+          ];
 
-//           const i = document.createElement("i");
-//           i.classList.add("fas", "fa-lightbulb");
+          spans.forEach((item) => {
+            const span = document.createElement("span");
+            span.textContent = item.text;
 
-//           basic.appendChild(p);
-//           basic.appendChild(i);
-//           return basic;
-//         };
+            status.appendChild(span);
+          });
 
-//         const basic = basicFun();
+          return status;
+        };
 
-//         const advancedFun = () => {
-//           const advanced = document.createElement("span");
-//           advanced.classList.add("advanced");
+        const status = statusFun();
 
-//           const p = document.createElement("p");
-//           p.innerHTML = "Advanced";
+        box.appendChild(h3);
+        box.appendChild(status);
+        return box;
+      };
 
-//           const i = document.createElement("i");
-//           i.classList.add("fas", "fa-bolt");
+      const box = boxFun();
 
-//           advanced.appendChild(p);
-//           advanced.appendChild(i);
-//           return advanced;
-//         };
+      const box2Fun = () => {
+        const box = document.createElement("div");
+        box.classList.add("box");
 
-//         const advanced = advancedFun();
+        const h3 = document.createElement("h3");
+        h3.innerHTML = "Customer Support";
 
-//         const premiumFun = () => {
-//           const premium = document.createElement("span");
-//           premium.classList.add("premium");
+        const statusFun = () => {
+          const status = document.createElement("div");
+          status.classList.add("status");
 
-//           const p = document.createElement("p");
-//           p.innerHTML = "Premium";
+          const spans = [
+            { text: "Online" },
+            { text: "Priority" },
+            { text: "Premium" },
+          ];
 
-//           const i = document.createElement("i");
-//           i.classList.add("fas", "fa-crown");
+          spans.forEach((item) => {
+            const span = document.createElement("span");
+            span.textContent = item.text;
 
-//           premium.appendChild(p);
-//           premium.appendChild(i);
-//           return premium;
-//         };
+            status.appendChild(span);
+          });
 
-//         const premium = premiumFun();
+          return status;
+        };
 
-//         subscriptionOptions.appendChild(basic);
-//         subscriptionOptions.appendChild(advanced);
-//         subscriptionOptions.appendChild(premium);
-//         return subscriptionOptions;
-//       };
+        const status = statusFun();
 
-//       const subscriptionOptions = subscriptionOptionsFun();
+        box.appendChild(h3);
+        box.appendChild(status);
+        return box;
+      };
 
-//       subscription.appendChild(subscriptionLevel);
-//       subscription.appendChild(subscriptionOptions);
-//       return subscription;
-//     };
+      const box2 = box2Fun();
 
-//     const subscription = subscriptionFun();
+      const box3Fun = () => {
+        const box = document.createElement("div");
+        box.classList.add("box");
 
-//     const customDivider = (parent) => {
-//       const customDivider = document.createElement("div");
-//       customDivider.classList.add("custom-divider");
+        const h3 = document.createElement("h3");
+        h3.innerHTML = "Monthly Requests";
 
-//       parent.appendChild(customDivider);
-//     };
+        const statusFun = () => {
+          const status = document.createElement("div");
+          status.classList.add("status");
 
-//     const boxFun = () => {
-//       const box = document.createElement("div");
-//       box.classList.add("box");
+          const spans = [
+            { text: "1000" },
+            { text: "5000" },
+            { text: "Unlimited" },
+          ];
 
-//       const h3 = document.createElement("div");
-//       h3.innerHTML = "Number of Users";
+          spans.forEach((item) => {
+            const span = document.createElement("span");
+            span.textContent = item.text;
 
-//       const statusFun = () => {
-//         const status = document.createElement("div");
-//         status.classList.add("status");
+            status.appendChild(span);
+          });
 
-//         const span1 = document.createElement("span");
-//         span1.innerHTML = "1";
+          return status;
+        };
 
-//         const span2 = document.createElement("span");
-//         span2.innerHTML = "Up to 5";
+        const status = statusFun();
 
-//         const span3 = document.createElement("span");
-//         span3.innerHTML = "Unlimited";
+        box.appendChild(h3);
+        box.appendChild(status);
+        return box;
+      };
 
-//         status.appendChild(span1);
-//         status.appendChild(span2);
-//         status.appendChild(span3);
+      const box3 = box3Fun();
 
-//         return status;
-//       };
+      const box4Fun = () => {
+        const box = document.createElement("div");
+        box.classList.add("box");
 
-//       const status = statusFun();
+        const h3 = document.createElement("h3");
+        h3.innerHTML = "Data Packages";
 
-//       box.appendChild(h3);
-//       box.appendChild(status);
-//       return box;
-//     };
-//     customDivider(mainBox);
-//     const box = boxFun();
+        const statusFun = () => {
+          const status = document.createElement("div");
+          status.classList.add("status");
 
-//     const box2Fun = () => {
-//       const box = document.createElement("div");
-//       box.classList.add("box");
+          const spans = [{ text: "1 GB" }, { text: "5 GB" }, { text: "10 GB" }];
 
-//       const h3 = document.createElement("div");
-//       h3.innerHTML = "Customer Support";
+          spans.forEach((item) => {
+            const span = document.createElement("span");
+            span.textContent = item.text;
 
-//       const statusFun = () => {
-//         const status = document.createElement("div");
-//         status.classList.add("status");
+            status.appendChild(span);
+          });
 
-//         const span1 = document.createElement("span");
-//         span1.innerHTML = "Online";
+          return status;
+        };
 
-//         const span2 = document.createElement("span");
-//         span2.innerHTML = "Priority";
+        const status = statusFun();
 
-//         const span3 = document.createElement("span");
-//         span3.innerHTML = "Preminum";
+        box.appendChild(h3);
+        box.appendChild(status);
+        return box;
+      };
 
-//         status.appendChild(span1);
-//         status.appendChild(span2);
-//         status.appendChild(span3);
+      const box4 = box4Fun();
 
-//         return status;
-//       };
+      const box5Fun = () => {
+        const box = document.createElement("div");
+        box.classList.add("box");
 
-//       const status = statusFun();
-//       box.appendChild(h3);
-//       box.appendChild(status);
-//       return box;
-//     };
-//     customDivider(mainBox);
-//     const box2 = box2Fun();
+        const h3 = document.createElement("h3");
+        h3.innerHTML = "Flexible Cancellation";
 
-//     const box3Fun = () => {
-//       const box = document.createElement("div");
-//       box.classList.add("box");
+        const statusFun = () => {
+          const status = document.createElement("div");
+          status.classList.add("status");
 
-//       const h3 = document.createElement("div");
-//       h3.innerHTML = "Monthly Requests";
+          const spans = [
+            { text: "Available" },
+            { text: "Available" },
+            { text: "Available" },
+          ];
 
-//       const statusFun = () => {
-//         const status = document.createElement("div");
-//         status.classList.add("status");
+          spans.forEach((item) => {
+            const span = document.createElement("span");
+            span.textContent = item.text;
 
-//         const span = document.createElement("span");
+            status.appendChild(span);
+          });
 
-//         const span1 = document.createElement("span");
-//         span1.innerHTML = "1000";
+          return status;
+        };
 
-//         const span2 = document.createElement("span");
-//         span2.innerHTML = "5000";
+        const status = statusFun();
 
-//         const span3 = document.createElement("span");
-//         span3.innerHTML = "Unlimited";
+        box.appendChild(h3);
+        box.appendChild(status);
+        return box;
+      };
 
-//         status.appendChild(span1);
-//         status.appendChild(span2);
-//         status.appendChild(span3);
-//         return status;
-//       };
+      const box5 = box5Fun();
 
-//       const status = statusFun();
+      const box6Fun = () => {
+        const box = document.createElement("div");
+        box.classList.add("box");
 
-//       box.appendChild(h3);
-//       box.appendChild(status);
-//       return box;
-//     };
-//     customDivider(mainBox);
-//     const box3 = box3Fun();
+        const h3 = document.createElement("h3");
+        h3.innerHTML = "Monthly Cost";
 
-//     const box4Fun = () => {
-//       const box = document.createElement("div");
-//       box.classList.add("box");
+        const statusFun = () => {
+          const status = document.createElement("div");
+          status.classList.add("status");
 
-//       const h3 = document.createElement("div");
-//       h3.innerHTML = "Data Packages";
+          const spans = [
+            { text: "$9.99" },
+            { text: "$19.99" },
+            { text: "$39.99" },
+          ];
 
-//       const statusFun = () => {
-//         const status = document.createElement("div");
-//         status.classList.add("status");
+          spans.forEach((item) => {
+            const span = document.createElement("span");
+            span.textContent = item.text;
 
-//         const span = document.createElement("span");
+            status.appendChild(span);
+          });
 
-//         const span1 = document.createElement("span");
-//         span1.innerHTML = "1 GB";
+          return status;
+        };
 
-//         const span2 = document.createElement("span");
-//         span1.innerHTML = "5 GB";
+        const status = statusFun();
 
-//         const span3 = document.createElement("span");
-//         span1.innerHTML = "10 GB";
+        box.appendChild(h3);
+        box.appendChild(status);
+        return box;
+      };
 
-//         status.appendChild(span1);
-//         status.appendChild(span2);
-//         status.appendChild(span3);
-//         return status;
-//       };
+      const box6 = box6Fun();
 
-//       const status = statusFun();
+      const customDividerFun = () => {
+        const customDivider = document.createElement("div");
+        customDivider.classList.add("custom-divider");
+        mainBox.appendChild(customDivider);
 
-//       box.appendChild(h3);
-//       box.appendChild(status);
-//       return box;
-//     };
-//     customDivider(mainBox);
-//     const box4 = box4Fun();
+        // return customDivider;
+      };
 
-//     const box5Fun = () => {
-//       const box = document.createElement("div");
-//       box.classList.add("box");
+      // const customDivider = customDividerFun()
 
-//       const h3 = document.createElement("div");
-//       h3.innerHTML = "Flexible Cancellation";
+      mainBox.appendChild(box);
+      customDividerFun();
+      mainBox.appendChild(box2);
+      // mainBox.appendChild(customDivider);
+      customDividerFun();
+      // mainBox.appendChild(customDivider);
+      mainBox.appendChild(box3);
+      customDividerFun();
+      // mainBox.appendChild(customDivider);
+      mainBox.appendChild(box4);
+      customDividerFun();
+      // mainBox.appendChild(customDivider);
+      mainBox.appendChild(box5);
+      customDividerFun();
+      // mainBox.appendChild(customDivider);
+      mainBox.appendChild(box6);
+      customDividerFun();
+      // mainBox.appendChild(customDivider);
+    };
 
-//       const statusFun = () => {
-//         const status = document.createElement("div");
-//         status.classList.add("status");
+    mainBox.appendChild(h1);
+    mainBox.appendChild(subscription);
+    boxFun();
+    return mainBox;
+  };
 
-//         const span = document.createElement("span");
+  const mainBox = mainBoxFun();
 
-//         const span1 = document.createElement("span");
-//         span1.innerHTML = "Available";
+  const secondBoxFun = () => {
+    const secondBox = document.createElement("div");
+    secondBox.classList.add("secondBox2");
 
-//         const span2 = document.createElement("span");
-//         span1.innerHTML = "Available";
+    const downloadFun = () => {
+      const download = document.createElement("div");
+      download.classList.add("download");
 
-//         const span3 = document.createElement("span");
-//         span1.innerHTML = "Available";
+      const h1 = document.createElement("h1");
+      h1.innerHTML = "Try it right now";
 
-//         status.appendChild(span1);
-//         status.appendChild(span2);
-//         status.appendChild(span3);
-//         return status;
-//       };
+      const p = document.createElement("p");
+      p.innerHTML =
+        "download the AI Ally on the AppStore and Google Play and discover the world of artificail intelligence! Enjoy innovative AI technologies directly on your device.";
 
-//       const status = statusFun();
+      const logoFun = () => {
+        const logo = document.createElement("div");
+        logo.classList.add("logo");
 
-//       box.appendChild(h3);
-//       box.appendChild(status);
-//       return box;
-//     };
-//     customDivider(mainBox);
-//     const box5 = box5Fun();
+        const downloadIconFun = () => {
+          const downloadIcon = document.createElement("div");
+          downloadIcon.classList.add("downloadIcon");
 
-//     const box6Fun = () => {
-//       const box = document.createElement("div");
-//       box.classList.add("box");
+          const i = document.createElement("i");
+          i.classList.add("fa-brands", "fa-apple");
 
-//       const h3 = document.createElement("div");
-//       h3.innerHTML = "Monthly Cost";
+          const textFun = () => {
+            const text = document.createElement("div");
+            text.classList.add("text");
 
-//       const statusFun = () => {
-//         const status = document.createElement("div");
-//         status.classList.add("status");
+            const p = document.createElement("p");
+            p.classList.add("p");
+            p.innerHTML = "Download on the";
 
-//         const span = document.createElement("span");
+            const p2 = document.createElement("p");
+            p2.classList.add("p2");
+            p2.innerHTML = "App Store";
 
-//         const span1 = document.createElement("span");
-//         span1.innerHTML = "$9.99";
-//         const span2 = document.createElement("span");
-//         span2.innerHTML = "$19.99";
-//         const span3 = document.createElement("span");
-//         span3.innerHTML = "$39.99";
+            text.appendChild(p);
+            text.appendChild(p2);
+            return text;
+          };
 
-//         status.appendChild(span1);
-//         status.appendChild(span2);
-//         status.appendChild(span3);
-//         return status;
-//       };
+          const text = textFun();
 
-//       const status = statusFun();
+          downloadIcon.appendChild(i);
+          downloadIcon.appendChild(text);
+          return downloadIcon;
+        };
 
-//       box.appendChild(h3);
-//       box.appendChild(status);
-//       return box;
-//     };
-//     customDivider(mainBox);
-//     const box6 = box6Fun();
+        const downloadIcon = downloadIconFun();
 
-//     mainBox.appendChild(h1);
-//     mainBox.appendChild(subscription);
+        const googlePlayFun = () => {
+          const googlePlay = document.createElement("div");
+          googlePlay.classList.add("googlePlay");
 
-//     mainBox.appendChild(box);
-//     mainBox.appendChild(box2);
-//     mainBox.appendChild(box3);
-//     mainBox.appendChild(box4);
-//     mainBox.appendChild(box5);
-//     mainBox.appendChild(box6);
-//     return mainBox;
-//   };
+          const i = document.createElement("i");
+          i.classList.add("fa-brands", "fa-google-play");
 
-//   const mainBox = mainBoxFun();
+          const textFun = () => {
+            const text = document.createElement("div");
+            text.classList.add("text");
 
-//   document.body.appendChild(plans);
-//   plans.appendChild(mainBox);
-// };
+            const p = document.createElement("p");
+            p.classList.add("p");
+            p.innerHTML = "GET it on";
 
-// plans();
+            const p2 = document.createElement("p");
+            p2.classList.add("p2");
+            p2.innerHTML = "Google Play";
 
-// const plans = () => {
-//   const plans = document.createElement("div");
-//   plans.classList.add("plans");
+            text.appendChild(p);
+            text.appendChild(p2);
+            return text;
+          };
 
-//   const mainBoxFun = () => {
-//     const mainBox = document.createElement("div");
-//     mainBox.classList.add("mainBox");
+          const text = textFun();
 
-//     const h1 = document.createElement("h1");
-//     h1.innerHTML = "Choose your favorite plan";
+          googlePlay.appendChild(i);
+          googlePlay.appendChild(text);
+          return googlePlay;
+        };
+        const googlePlay = googlePlayFun();
 
-//     const subscriptionFun = () => {
-//       const subscription = document.createElement("div");
-//       subscription.classList.add("subscription");
+        logo.appendChild(downloadIcon);
+        logo.appendChild(googlePlay);
+        return logo;
+      };
+      const logo = logoFun();
 
-//       const subscriptionLevelFun = () => {
-//         const subscriptionLevel = document.createElement("div");
-//         subscriptionLevel.classList.add("subscription-level");
+      download.appendChild(h1);
+      download.appendChild(p);
+      download.appendChild(logo);
+      return download;
+    };
 
-//         const h3 = document.createElement("h3");
-//         h3.innerHTML = "Subscription level";
+    const download = downloadFun();
 
-//         subscriptionLevel.appendChild(h3);
-//         return subscriptionLevel;
-//       };
+    const imgFun = () => {
+      const imgDiv = document.createElement("div");
+      imgDiv.classList.add("img");
 
-//       const subscriptionLevel = subscriptionLevelFun();
+      const img = document.createElement("img");
+      img.src = "img/phone.jpg";
 
-//       const subscriptionOptionsFun = () => {
-//         const subscriptionOptions = document.createElement("div");
-//         subscriptionOptions.classList.add("subscription-options");
+      imgDiv.appendChild(img);
+      return imgDiv;
+    };
 
-//         const basicFun = () => {
-//           const basic = document.createElement("span");
-//           basic.classList.add("basic");
+    const img = imgFun();
 
-//           const p = document.createElement("p");
-//           p.innerHTML = "Basic";
+    secondBox.appendChild(download);
+    secondBox.appendChild(img);
+    return secondBox;
+  };
 
-//           const i = document.createElement("i");
-//           i.classList.add("fas", "fa-lightbulb");
+  const secondBox = secondBoxFun();
 
-//           basic.appendChild(p);
-//           basic.appendChild(i);
-//           return basic;
-//         };
+  document.body.appendChild(plans);
+  plans.appendChild(mainBox);
+  plans.appendChild(secondBox);
+};
 
-//         const basic = basicFun();
-
-//         const advancedFun = () => {
-//           const advanced = document.createElement("span");
-//           advanced.classList.add("advanced");
-
-//           const p = document.createElement("p");
-//           p.innerHTML = "Advanced";
-
-//           const i = document.createElement("i");
-//           i.classList.add("fas", "fa-bolt");
-
-//           advanced.appendChild(p);
-//           advanced.appendChild(i);
-//           return advanced;
-//         };
-
-//         const advanced = advancedFun();
-
-//         const premiumFun = () => {
-//           const premium = document.createElement("span");
-//           premium.classList.add("premium");
-
-//           const p = document.createElement("p");
-//           p.innerHTML = "Premium";
-
-//           const i = document.createElement("i");
-//           i.classList.add("fas", "fa-crown");
-
-//           premium.appendChild(p);
-//           premium.appendChild(i);
-//           return premium;
-//         };
-
-//         const premium = premiumFun();
-
-//         subscriptionOptions.appendChild(basic);
-//         subscriptionOptions.appendChild(advanced);
-//         subscriptionOptions.appendChild(premium);
-//         return subscriptionOptions;
-//       };
-
-//       const subscriptionOptions = subscriptionOptionsFun();
-
-//       subscription.appendChild(subscriptionLevel);
-//       subscription.appendChild(subscriptionOptions);
-//       return subscription;
-//     };
-
-//     const subscription = subscriptionFun();
-
-//     const addBoxWithDivider = (parent, title, statuses) => {
-//       const box = document.createElement("div");
-//       box.classList.add("box");
-
-//       const h3 = document.createElement("div");
-//       h3.innerHTML = title;
-
-//       const statusFun = () => {
-//         const status = document.createElement("div");
-//         status.classList.add("status");
-
-//         statuses.forEach((text) => {
-//           const span = document.createElement("span");
-//           span.innerHTML = text;
-//           status.appendChild(span);
-//         });
-
-//         return status;
-//       };
-
-//       const status = statusFun();
-
-//       box.appendChild(h3);
-//       box.appendChild(status);
-//       parent.appendChild(box);
-
-//       // Add a custom divider after each box
-//       const customDivider = document.createElement("div");
-//       customDivider.classList.add("custom-divider");
-//       parent.appendChild(customDivider);
-//     };
-
-//     mainBox.appendChild(h1);
-//     mainBox.appendChild(subscription);
-
-//     // Add each box with its corresponding divider
-//     addBoxWithDivider(mainBox, "Number of Users", [
-//       "1",
-//       "Up to 5",
-//       "Unlimited",
-//     ]);
-//     addBoxWithDivider(mainBox, "Customer Support", [
-//       "Online",
-//       "Priority",
-//       "Premium",
-//     ]);
-//     addBoxWithDivider(mainBox, "Monthly Requests", [
-//       "1000",
-//       "5000",
-//       "Unlimited",
-//     ]);
-//     addBoxWithDivider(mainBox, "Data Packages", ["1 GB", "5 GB", "10 GB"]);
-//     addBoxWithDivider(mainBox, "Flexible Cancellation", [
-//       "Available",
-//       "Available",
-//       "Available",
-//     ]);
-//     addBoxWithDivider(mainBox, "Monthly Cost", ["$9.99", "$19.99", "$39.99"]);
-
-//     return mainBox;
-//   };
-
-//   const mainBox = mainBoxFun();
-
-//   document.body.appendChild(plans);
-//   plans.appendChild(mainBox);
-// };
-
-// plans();
+plans();
 
 const footer = () => {
   const footer = document.createElement("div");

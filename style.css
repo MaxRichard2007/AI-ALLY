@@ -259,11 +259,15 @@ button {
   .subscription-options .basic {
     background: #bbf99e; }
     .subscription-options .basic .fas {
-      left: 4rem; }
+      left: 3.5rem; }
   .subscription-options .advanced {
     background: #ccbafe; }
+    .subscription-options .advanced .fas {
+      left: 1.5rem; }
   .subscription-options .premium {
     background: #edd087; }
+    .subscription-options .premium .fas {
+      left: 1.5rem; }
   .subscription-options span {
     display: flex;
     align-items: center; }
@@ -360,7 +364,7 @@ button {
   background-color: rgba(0, 0, 3, 0.2);
   margin: 10px 0;
   height: 2px;
-  top: 27rem;
+  top: 25rem;
   position: relative;
   left: 1rem; }
 
@@ -368,7 +372,7 @@ button {
   display: flex;
   justify-content: space-between;
   color: gray;
-  top: 27rem;
+  top: 26rem;
   position: relative;
   width: 74rem;
   left: 1rem; }
@@ -402,7 +406,7 @@ button {
         transition: 0.2s; }
 
 .footer {
-  top: 27rem;
+  top: 24rem;
   position: relative;
   width: 73rem;
   display: flex;
