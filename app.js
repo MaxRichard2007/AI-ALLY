@@ -1199,66 +1199,93 @@ testimonials();
 
 // plans();
 
-// const footer = () => {
-//   const footer = document.createElement("div");
-//   footer.classList.add("footer");
+const footer = () => {
+  const footer = document.createElement("div");
+  footer.classList.add("footer");
 
-//   const leftSectionFun = () => {
-//     const leftSection = document.createElement("div");
-//     leftSection.classList.add("left-section");
+  const leftSectionFun = () => {
+    const leftSection = document.createElement("div");
+    leftSection.classList.add("left-section");
 
-//     const img = document.createElement("img");
-//     img.src = "img/Ninja Turtles icon.svg";
+    const img = document.createElement("img");
+    img.src = "img/Ninja Turtles icon.svg";
 
-//     const p = document.createElement("p");
-//     p.innerHTML = "AI ALLY";
+    const p = document.createElement("p");
+    p.innerHTML = "AI ALLY";
 
-//     leftSection.appendChild(img);
-//     leftSection.appendChild(p);
-//     return leftSection;
-//   };
+    leftSection.appendChild(img);
+    leftSection.appendChild(p);
+    return leftSection;
+  };
 
-//   const leftSection = leftSectionFun();
+  const leftSection = leftSectionFun();
 
-//   const centerSectionFun = () => {
-//     const centerSection = document.createElement("div");
-//     centerSection.classList.add("center-section");
+  const centerSectionFun = () => {
+    const centerSection = document.createElement("div");
+    centerSection.classList.add("center-section");
 
-//     const menuItems = [
-//       { text: "Home", href: "#" },
-//       { text: "Features", href: "#" },
-//       { text: "Pricing", href: "#" },
-//       { text: "Testimonials", href: "#" },
-//     ];
+    const menuItems = [
+      { text: "Home", href: "#" },
+      { text: "Features", href: "#" },
+      { text: "Pricing", href: "#" },
+      { text: "Testimonials", href: "#" },
+    ];
 
-//     const ul = document.createElement("ul");
+    const ul = document.createElement("ul");
 
-//     menuItems.forEach((item) => {
-//       const centerSection = document.createElement("div");
-//       centerSection.classList.add("center-section");
+    menuItems.forEach((item) => {
+      const li = document.createElement("li");
 
-//       const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.textContent = item.text;
+      a.href = item.href;
 
-//       const a = document.createElement("a");
-//       a.textContent = item.text;
-//       a.href = item.href;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
 
-//       centerSection.appendChild(ul);
-//       li.appendChild(a);
-//       ul.appendChild(li);
+    centerSection.appendChild(ul);
+    return centerSection;
+  };
 
-//       return centerSection;
-//     });
-//   };
+  const centerSection = centerSectionFun();
 
-//   const centerSection = centerSectionFun();
+  const rightSectionFun = () => {
+    const rightSection = document.createElement("div");
+    rightSection.classList.add("right-section");
 
-//   document.body.appendChild(footer);
-//   footer.appendChild(leftSection);
-//   footer.appendChild(centerSection);
-// };
+    const menuItem = [
+      { text: "Instagram", href: "#" },
+      { text: "Facebook", href: "#" },
+      { text: "Twitter", href: "#" },
+    ];
 
-// footer();
+    const ul = document.createElement("ul");
+
+    menuItem.forEach((item) => {
+      const li = document.createElement("li");
+
+      const a = document.createElement("a");
+      a.textContent = item.text;
+      a.href = item.href;
+
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+
+    rightSection.appendChild(ul);
+    return rightSection;
+  };
+
+  const rightSection = rightSectionFun();
+
+  document.body.appendChild(footer);
+  footer.appendChild(leftSection);
+  footer.appendChild(centerSection);
+  footer.appendChild(rightSection);
+};
+
+footer();
 
 const customDivider = () => {
   const customDivider = document.createElement("div");
