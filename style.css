@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
 body {
   margin: 0;
@@ -63,6 +64,94 @@ button {
   .buttonInImage:hover {
     transition: 0.5s;
     background: #d9d9d9; }
+
+.ham {
+  display: none;
+  /* off-screen-menu */
+  /* nav */
+  /* ham menu */ }
+  .ham .no-scroll {
+    overflow: hidden; }
+  .ham .off-screen-menu ul {
+    padding: 0;
+    /* حذف پدینگ پیش‌فرض ul */
+    margin: 0;
+    /* حذف مارژین پیش‌فرض ul */ }
+  .ham .off-screen-menu ul li {
+    margin: 1rem 0;
+    /* فاصله عمودی بین آیتم‌ها */ }
+  .ham .off-screen-menu ul li a {
+    font-size: 2rem;
+    /* اندازه متن منو (اختیاری) */ }
+  .ham * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none; }
+  .ham li {
+    font-size: 1rem; }
+  .ham ul {
+    top: 9rem;
+    position: relative; }
+  .ham a {
+    color: white; }
+  .ham a:visited {
+    color: white; }
+  .ham a:hover {
+    color: #6f86ff; }
+  .ham body {
+    background-color: #414761;
+    font-family: sans-serif; }
+  .ham .off-screen-menu {
+    background-color: #222531;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: 0.3s ease; }
+  .ham .off-screen-menu.active {
+    right: 0; }
+  .ham nav {
+    padding: 1rem;
+    display: flex; }
+  .ham .ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative; }
+  .ham .ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #181a1b;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease; }
+  .ham .ham-menu span:nth-child(1) {
+    top: 25%; }
+  .ham .ham-menu span:nth-child(3) {
+    top: 75%; }
+  .ham .ham-menu.active span {
+    background-color: white; }
+  .ham .ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg); }
+  .ham .ham-menu.active span:nth-child(2) {
+    opacity: 0; }
+  .ham .ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg); }
 
 .stats {
   display: flex;
@@ -207,11 +296,11 @@ button {
   margin-bottom: 0; }
 
 .plans {
-  top: 17rem;
+  top: 23rem;
   position: relative;
   background: #181a1b;
   border-radius: 3rem;
-  width: 75rem;
+  width: 83rem;
   height: 70rem;
   left: 1rem;
   color: white; }
@@ -220,7 +309,7 @@ button {
   left: 3rem;
   position: relative;
   top: 2rem;
-  width: 64rem; }
+  width: 76rem; }
   .mainBox .custom-divider {
     background-color: rgba(0, 0, 3, 0.2);
     margin: 10px 0;
@@ -360,11 +449,11 @@ button {
       width: 19rem; }
 
 .custom-divider2 {
-  width: 74rem;
+  width: 83rem;
   background-color: rgba(0, 0, 3, 0.2);
   margin: 10px 0;
   height: 2px;
-  top: 25rem;
+  top: 29rem;
   position: relative;
   left: 1rem; }
 
@@ -372,9 +461,9 @@ button {
   display: flex;
   justify-content: space-between;
   color: gray;
-  top: 26rem;
+  top: 30rem;
   position: relative;
-  width: 74rem;
+  width: 83rem;
   left: 1rem; }
 
 .header {
@@ -406,9 +495,9 @@ button {
         transition: 0.2s; }
 
 .footer {
-  top: 24rem;
+  top: 28rem;
   position: relative;
-  width: 73rem;
+  width: 82rem;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
@@ -439,6 +528,42 @@ button {
       text-decoration: none;
       color: #131313; }
 
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
 .heroSection {
   display: flex;
   justify-content: space-between;
@@ -446,7 +571,7 @@ button {
   padding: 50px;
   background: #111;
   border-radius: 20px;
-  max-width: 69rem;
+  max-width: 77rem;
   margin: 50px auto;
   color: white;
   top: -2rem;
@@ -475,7 +600,7 @@ button {
     font-size: 3rem; }
 
 .differentDes {
-  width: 75rem;
+  width: 83rem;
   position: relative;
   left: 1rem; }
   .differentDes .paragraph {
@@ -505,5 +630,302 @@ button {
     top: 3rem;
     position: relative;
     text-align: center; }
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .header .left-header-section p {
+    display: none; }
+
+  .heroSection .image-container img {
+    left: 2rem;
+    position: relative; }
+  .heroSection .buttons .green i {
+    display: none; }
+  .heroSection .text p {
+    font-size: 16px; }
+  .heroSection .text h1 {
+    font-size: 34px; }
+
+  .differentDes {
+    width: 36rem; }
+    .differentDes .secondParagraph p {
+      max-width: 93%; }
+    .differentDes h1 {
+      text-align: center; }
+    .differentDes .paragraph .text3,
+    .differentDes .paragraph .text2 {
+      left: 0rem; }
+    .differentDes .imageContainer {
+      flex-direction: column; }
+
+  .appContainer .profileImg {
+    display: none; }
+  .appContainer .chatContainer {
+    left: 3rem;
+    position: relative; }
+
+  .testimonials {
+    left: 1rem; }
+    .testimonials .textBox {
+      flex-direction: column;
+      width: 37rem;
+      justify-content: center;
+      text-align: center; }
+      .testimonials .textBox .secondTextBox {
+        left: 11rem;
+        top: -5rem;
+        max-width: 50%; }
+        .testimonials .textBox .secondTextBox p {
+          left: 0; }
+      .testimonials .textBox .thirdTextBox {
+        left: 11rem;
+        max-width: 33%;
+        top: -10rem; }
+    .testimonials .boxes {
+      flex-direction: column;
+      top: -9rem; }
+    .testimonials .firstBox,
+    .testimonials .secondBox,
+    .testimonials .thirdBox {
+      width: 23rem;
+      left: 6rem;
+      position: relative; }
+
+  .plans {
+    width: 37.1rem;
+    left: 0;
+    top: 8rem;
+    border-radius: 0rem; }
+    .plans .secondBox2 {
+      top: 4rem;
+      left: 4rem; }
+      .plans .secondBox2 img {
+        display: none; }
+    .plans .subscription,
+    .plans .box {
+      width: 28rem;
+      flex-direction: column;
+      position: relative; }
+      .plans .subscription .status,
+      .plans .box .status {
+        left: 2rem;
+        position: relative; }
+      .plans .subscription h3,
+      .plans .box h3 {
+        left: 0rem;
+        position: relative; }
+    .plans .subscription-options {
+      display: flex;
+      gap: 20px;
+      top: -10px;
+      position: relative; }
+    .plans .mainBox .custom-divider {
+      width: 30rem; }
+
+  .footer {
+    display: none; }
+
+  .custom-divider2 {
+    display: none; }
+
+  .down {
+    width: 35rem;
+    top: 10rem; } }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .heroSection {
+    max-width: 55rem; }
+    .heroSection .text {
+      max-width: 50%; }
+    .heroSection .image-container {
+      display: block;
+      left: 4rem;
+      position: relative; }
+    .heroSection .buttons,
+    .heroSection .stats {
+      left: 0; }
+
+  .differentDes {
+    width: 46rem; }
+    .differentDes .secondParagraph p {
+      max-width: 93%; }
+    .differentDes h1 {
+      text-align: center; }
+    .differentDes .paragraph .text3,
+    .differentDes .paragraph .text2 {
+      left: 0rem; }
+    .differentDes .imageContainer {
+      flex-direction: column; }
+
+  .appContainer .profileImg {
+    display: none; }
+  .appContainer .chatContainer {
+    left: 10rem;
+    position: relative; }
+
+  .testimonials .textBox {
+    display: flex;
+    left: -2rem !important; }
+    .testimonials .textBox .secondTextBox {
+      left: -2rem;
+      top: 0rem; }
+    .testimonials .textBox .thirdTextBox {
+      left: -12rem;
+      max-width: 33%;
+      top: 0rem; }
+  .testimonials .boxes {
+    left: 6rem;
+    width: 56rem;
+    top: 2rem; }
+  .testimonials .textBox {
+    display: flex;
+    left: -5rem;
+    position: relative;
+    flex-direction: row;
+    width: 60rem; }
+    .testimonials .textBox .textBox .secondTextBox {
+      left: 1rem;
+      /* top: -5rem; */
+      max-width: 50%; }
+    .testimonials .textBox .testimonials .boxes {
+      top: 1rem; }
+    .testimonials .textBox .Testimonials {
+      left: 2rem;
+      position: relative; }
+
+  .boxes .firstBox,
+  .boxes .secondBox,
+  .boxes .thirdBox {
+    width: 26rem; }
+
+  .footer {
+    display: flex;
+    width: 60rem;
+    top: 27rem; }
+
+  .custom-divider2 {
+    display: block;
+    top: 13rem; }
+
+  .down {
+    width: 60rem;
+    top: 13rem; }
+
+  .plans {
+    width: 62rem;
+    top: 23rem;
+    left: 0;
+    border-radius: 0rem; }
+    .plans img {
+      display: none; }
+    .plans .secondBox2 {
+      left: 8rem;
+      top: 4rem;
+      font-size: 20px; }
+    .plans .mainBox {
+      left: 1rem; }
+      .plans .mainBox .subscription {
+        width: 44rem; }
+      .plans .mainBox .box {
+        width: 44rem; }
+    .plans .subscription-options {
+      display: flex;
+      gap: 20px;
+      position: relative; }
+
+  .footer {
+    display: flex;
+    width: 46rem; }
+
+  .custom-divider2 {
+    top: 27rem;
+    display: flex; }
+
+  .down {
+    width: 46rem;
+    top: 27rem;
+    display: flex; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .differentDes {
+    width: 60rem; }
+    .differentDes .imageContainer {
+      flex-direction: row; }
+    .differentDes .paragraph {
+      display: flex;
+      gap: 63px; }
+
+  .appContainer .chatContainer {
+    left: -9rem; }
+  .appContainer .profileImg {
+    display: block; }
+    .appContainer .profileImg img {
+      left: -5rem;
+      width: 26rem;
+      position: relative; }
+
+  .plans {
+    width: 62rem; }
+    .plans .mainBox .subscription {
+      width: 57rem; }
+    .plans .mainBox .box {
+      width: 57rem; }
+    .plans .secondBox2 .img img {
+      display: block;
+      position: relative;
+      left: -4rem;
+      top: 6rem; }
+
+  .testimonials .textBox {
+    display: flex;
+    left: -2rem !important; }
+    .testimonials .textBox .secondTextBox {
+      left: -2rem;
+      top: 0rem; }
+    .testimonials .textBox .thirdTextBox {
+      left: -12rem;
+      max-width: 33%;
+      top: 0rem; }
+  .testimonials .boxes {
+    left: -3rem;
+    width: 56rem;
+    top: 2rem; }
+  .testimonials .textBox {
+    display: flex;
+    left: -4rem !important;
+    position: relative;
+    flex-direction: row;
+    width: 60rem; }
+    .testimonials .textBox .secondTextBox {
+      left: 3rem;
+      max-width: 50%; }
+    .testimonials .textBox .thirdTextBox {
+      left: -7rem; }
+    .testimonials .textBox .testimonials .boxes {
+      top: 1rem; }
+    .testimonials .textBox .Testimonials {
+      left: 2rem;
+      position: relative; }
+
+  .footer {
+    display: flex;
+    width: 60rem;
+    top: 27rem; }
+
+  .custom-divider2 {
+    display: block;
+    top: 27rem;
+    width: 60rem; }
+
+  .down {
+    width: 60rem;
+    top: 27rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,510 @@
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .header {
+    .left-header-section {
+      p {
+        display: none;
+      }
+    }
+  }
+
+  .heroSection {
+    .image-container {
+      img {
+        left: 2rem;
+        position: relative;
+      }
+    }
+
+    .buttons {
+      .green i {
+        display: none;
+      }
+    }
+
+    .text {
+      p {
+        font-size: 16px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+    }
+  }
+
+  .differentDes {
+    width: 36rem;
+
+    .secondParagraph p {
+      max-width: 93%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .paragraph {
+      .text3,
+      .text2 {
+        left: 0rem;
+      }
+    }
+
+    .imageContainer {
+      flex-direction: column;
+    }
+  }
+
+  .appContainer {
+    .profileImg {
+      display: none;
+    }
+
+    .chatContainer {
+      left: 3rem;
+      position: relative;
+    }
+  }
+
+  .testimonials {
+    left: 1rem;
+
+    .textBox {
+      flex-direction: column;
+      width: 37rem;
+      justify-content: center;
+      text-align: center;
+
+      .secondTextBox {
+        p {
+          left: 0;
+        }
+        left: 11rem;
+        top: -5rem;
+        max-width: 50%;
+      }
+
+      .thirdTextBox {
+        left: 11rem;
+        max-width: 33%;
+        top: -10rem;
+      }
+    }
+
+    .boxes {
+      flex-direction: column;
+      top: -9rem;
+    }
+
+    .firstBox,
+    .secondBox,
+    .thirdBox {
+      width: 23rem;
+      left: 6rem;
+      position: relative;
+    }
+  }
+
+  .plans {
+    width: 37.1rem;
+    left: 0;
+    top: 8rem;
+    border-radius: 0rem;
+
+    .secondBox2 {
+      img {
+        display: none;
+      }
+      top: 4rem;
+      left: 4rem;
+    }
+
+    .subscription,
+    .box {
+      width: 28rem;
+      flex-direction: column;
+      position: relative;
+
+      .status {
+        left: 2rem;
+        position: relative;
+      }
+
+      h3 {
+        left: 0rem;
+        position: relative;
+      }
+    }
+
+    .subscription-options {
+      display: flex;
+      gap: 20px;
+      top: -10px;
+      position: relative;
+    }
+
+    .mainBox {
+      .custom-divider {
+        width: 30rem;
+      }
+    }
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .custom-divider2 {
+    display: none;
+  }
+
+  .down {
+    width: 35rem;
+    top: 10rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .heroSection {
+    max-width: 55rem;
+
+    .text {
+      max-width: 50%;
+    }
+
+    .image-container {
+      display: block;
+      left: 4rem;
+      position: relative;
+    }
+
+    .buttons,
+    .stats {
+      left: 0;
+    }
+  }
+
+  .differentDes {
+    width: 46rem;
+
+    .secondParagraph p {
+      max-width: 93%;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .paragraph {
+      .text3,
+      .text2 {
+        left: 0rem;
+      }
+    }
+
+    .imageContainer {
+      flex-direction: column;
+    }
+  }
+
+  .appContainer {
+    .profileImg {
+      display: none;
+    }
+
+    .chatContainer {
+      left: 10rem;
+      position: relative;
+    }
+  }
+
+  .testimonials {
+    .textBox {
+      display: flex;
+      left: -2rem !important;
+
+      .secondTextBox {
+        left: -2rem;
+        top: 0rem;
+      }
+
+      .thirdTextBox {
+        left: -12rem;
+        max-width: 33%;
+        top: 0rem;
+      }
+    }
+
+    .boxes {
+      left: 6rem;
+      width: 56rem;
+      top: 2rem;
+    }
+    .textBox {
+      display: flex;
+      left: -5rem;
+      position: relative;
+      flex-direction: row;
+      width: 60rem;
+
+      .textBox .secondTextBox {
+        left: 1rem;
+        /* top: -5rem; */
+        max-width: 50%;
+      }
+
+      .testimonials .boxes {
+        top: 1rem;
+      }
+
+      .Testimonials {
+        left: 2rem;
+        position: relative;
+      }
+    }
+  }
+
+  .boxes .firstBox,
+  .boxes .secondBox,
+  .boxes .thirdBox {
+    width: 26rem;
+  }
+
+  .footer {
+    display: flex;
+    width: 60rem;
+    top: 27rem;
+  }
+
+  .custom-divider2 {
+    display: block;
+    top: 13rem;
+  }
+
+  .down {
+    width: 60rem;
+    top: 13rem;
+  }
+
+  .plans {
+    width: 62rem;
+    top: 23rem;
+    left: 0;
+    border-radius: 0rem;
+
+    img {
+      display: none;
+    }
+
+    .secondBox2 {
+      left: 8rem;
+      top: 4rem;
+      font-size: 20px;
+    }
+
+    .mainBox {
+      left: 1rem;
+
+      .subscription {
+        width: 44rem;
+      }
+
+      .box {
+        width: 44rem;
+      }
+    }
+
+    .subscription-options {
+      display: flex;
+      gap: 20px;
+      position: relative;
+    }
+  }
+
+  .footer {
+    display: flex;
+    width: 46rem;
+  }
+
+  .custom-divider2 {
+    top: 27rem;
+    display: flex;
+  }
+
+  .down {
+    width: 46rem;
+    top: 27rem;
+    display: flex;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .differentDes {
+    width: 60rem;
+
+    .imageContainer {
+      flex-direction: row;
+    }
+
+    .paragraph {
+      display: flex;
+      gap: 63px;
+    }
+  }
+
+  .appContainer {
+    .chatContainer {
+      left: -9rem;
+    }
+
+    .profileImg {
+      display: block;
+
+      img {
+        left: -5rem;
+        width: 26rem;
+        position: relative;
+      }
+    }
+  }
+
+  .plans {
+    width: 62rem;
+
+    .mainBox {
+      .subscription {
+        width: 57rem;
+      }
+
+      .box {
+        width: 57rem;
+      }
+    }
+
+    .secondBox2 {
+      .img {
+        img {
+          display: block;
+          position: relative;
+          left: -4rem;
+          top: 6rem;
+        }
+      }
+    }
+  }
+
+  // .testimonials {
+  //   .textBox {
+  //     display: flex;
+  //     left: -5rem;
+  //     position: relative;
+  //     flex-direction: row;
+  //     width: 60rem;
+
+  //     .textBox .secondTextBox {
+  //       left: 1rem;
+  //       max-width: 50%;
+  //     }
+
+  //     .textBox .secondTextBox p {
+  //       max-width: 72%;
+  //       left: 1rem;
+  //       position: relative;
+  //     }
+
+  //     .textBox .thirdTextBox {
+  //       left: -7rem;
+  //       max-width: 33%;
+  //       top: 0rem;
+  //     }
+
+  //     .testimonials .boxes {
+  //       left: -2rem !important;
+  //       width: 56rem;
+  //       top: 2rem;
+  //     }
+
+  //     .Testimonials {
+  //       left: 2rem;
+  //       position: relative;
+  //     }
+  //   }
+  // }
+
+  .testimonials {
+    .textBox {
+      display: flex;
+      left: -2rem !important;
+
+      .secondTextBox {
+        left: -2rem;
+        top: 0rem;
+      }
+
+      .thirdTextBox {
+        left: -12rem;
+        max-width: 33%;
+        top: 0rem;
+      }
+    }
+
+    .boxes {
+      left: -3rem;
+      width: 56rem;
+      top: 2rem;
+    }
+    .textBox {
+      display: flex;
+      left: -4rem !important;
+      position: relative;
+      flex-direction: row;
+      width: 60rem;
+
+      .secondTextBox {
+        left: 3rem;
+        max-width: 50%;
+      }
+
+      .thirdTextBox {
+        left: -7rem;
+      }
+
+      .testimonials .boxes {
+        top: 1rem;
+      }
+
+      .Testimonials {
+        left: 2rem;
+        position: relative;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    width: 60rem;
+    top: 27rem;
+  }
+
+  .custom-divider2 {
+    display: block;
+    top: 27rem;
+    width: 60rem;
+  }
+
+  .down {
+    width: 60rem;
+    top: 27rem;
+  }
+}

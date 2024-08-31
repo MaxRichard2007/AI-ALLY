@@ -72,6 +72,97 @@ const headerSection = () => {
 
 headerSection();
 
+const hamFun = () => {
+  const ham = document.createElement("div");
+  ham.classList.add("ham");
+
+  const menuItems = [
+    { text: "Home", href: "#" },
+    { text: "Features", href: "#" },
+    { text: "Pricing", href: "#" },
+    { text: "Testimonials", href: "#" },
+  ];
+
+  const offScreenMenuFun = () => {
+    const offScreenMenu = document.createElement("div");
+    offScreenMenu.classList.add("off-screen-menu");
+
+    const ul = document.createElement("ul");
+
+    menuItems.forEach((item) => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.textContent = item.text;
+      a.href = item.href;
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+
+    offScreenMenu.appendChild(ul);
+    return offScreenMenu;
+  };
+
+  const offScreenMenu = offScreenMenuFun();
+
+  const navFun = () => {
+    const nav = document.createElement("nav");
+
+    const hamMenu = document.createElement("div");
+    hamMenu.classList.add("ham-menu");
+
+    const span = document.createElement("span");
+    const span2 = document.createElement("span");
+    const span3 = document.createElement("span");
+
+    const imgFun = () => {
+      const imgDiv = document.createElement("div");
+
+      const img = document.createElement("img");
+      img.src = "img/Ninja Turtles icon.svg";
+      img.classList.add("logo");
+
+      const p = document.createElement("p");
+      p.innerHTML = "AI ALLY";
+
+      imgDiv.appendChild(img);
+      imgDiv.appendChild(p);
+      return imgDiv;
+    };
+
+    const img = imgFun();
+
+    hamMenu.appendChild(span);
+    hamMenu.appendChild(span2);
+    hamMenu.appendChild(span3);
+    nav.appendChild(img);
+    nav.appendChild(hamMenu);
+    return nav;
+  };
+
+  const nav = navFun();
+
+  ham.appendChild(offScreenMenu);
+  ham.appendChild(nav);
+
+  document.body.appendChild(ham);
+
+  const hamMenu = document.querySelector(".ham-menu");
+  const offScreenMenu2 = document.querySelector(".off-screen-menu");
+
+  hamMenu.addEventListener("click", () => {
+    hamMenu.classList.toggle("active");
+    offScreenMenu2.classList.toggle("active");
+
+    if (offScreenMenu2.classList.contains("active")) {
+      document.body.classList.add("no-scroll");
+    } else {
+      document.body.classList.remove("no-scroll");
+    }
+  });
+};
+
+hamFun();
+
 const heroSection = () => {
   const heroSection = document.createElement("div");
   heroSection.classList.add("heroSection");
